@@ -17,7 +17,7 @@ export default function CheckoutPage() {
 
   const deliveryFee = total >= 500 ? 0 : 49;
   const grandTotal = total + deliveryFee;
-  const upiId = 'kanhabakers@upi';
+  const upiId = '9602870828@ybl';
 
   const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=upi://pay?pa=${upiId}&pn=KanhaBakers&am=${grandTotal}&cu=INR&tn=KanhaBakersOrder`;
 
