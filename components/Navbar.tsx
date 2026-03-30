@@ -145,7 +145,7 @@ export default function Navbar() {
 
             <div className="mt-auto pb-16">
               <p className="font-accent text-3xl text-caramel">Crafted with love.</p>
-              <p className="font-body text-sm text-crust mt-1">Since 2008 · Ajmer, Rajasthan</p>
+              <p className="font-body text-sm text-crust mt-1">Since 2008 · newai, Rajasthan</p>
             </div>
           </motion.div>
         )}
@@ -535,7 +535,7 @@ export default function Navbar() {
 //                   🛒 &nbsp;Order Now
 //                 </a>
 //                 <p className="font-nunito text-mocha/40 text-xs text-center mt-4">
-//                   Since 2009 · Ajmer, Rajasthan
+//                   Since 2009 · newai, Rajasthan
 //                 </p>
 //               </motion.div>
 //             </motion.div>

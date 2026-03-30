@@ -79,7 +79,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-caramel shrink-0 mt-0.5" />
-                <span className="font-body text-sm text-bakery-200">12, Naya Bazaar, Ajmer, Rajasthan 305001</span>
+                <span className="font-body text-sm text-bakery-200">12, Naya Bazaar, newai, Rajasthan 305001</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-caramel shrink-0" />
@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-bakery-400">
-            © 2024 Kanha Bakers. All rights reserved. Made with ♥ in Ajmer.
+            © 2024 Kanha Bakers. All rights reserved. Made with ♥ in newai.
           </p>
           <p className="font-accent text-lg text-caramel">
             Crafted with love, baked with pride.

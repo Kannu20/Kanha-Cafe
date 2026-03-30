@@ -434,7 +434,7 @@
 //     setTimeout(() => {
 //       const itemsText = localItems.map(i => `  • ${i.name} ×${i.quantity} = ₹${i.price * i.quantity}`).join('%0A');
 //       const orderInfo = details.orderType === 'pickup'
-//         ? `🏪 *Order Type:* Store Pickup%0A⏰ *Pickup Time:* ${details.pickupTime}%0A📍 *From:* 12, Naya Bazaar, Ajmer`
+//         ? `🏪 *Order Type:* Store Pickup%0A⏰ *Pickup Time:* ${details.pickupTime}%0A📍 *From:* 12, Naya Bazaar, newai`
 //         : `🚚 *Order Type:* Home Delivery%0A📍 *Address:* ${details.address}`;
 //       const payText = payMethod === 'upi'
 //         ? `💳 UPI${verification.transactionId ? ` | TxnID: ${verification.transactionId}` : ' (screenshot verified)'}`
@@ -926,13 +926,13 @@
 //                             <div className="relative">
 //                               <MapPin size={15} className="absolute left-4 top-4 text-gray-400" />
 //                               <textarea value={details.address} onChange={e => setDetails(d => ({ ...d, address: e.target.value }))}
-//                                 placeholder="House/Flat no., Street, Area, Ajmer"
+//                                 placeholder="House/Flat no., Street, Area, newai"
 //                                 rows={3}
 //                                 className={`w-full pl-10 pr-4 py-3 border rounded-xl font-body text-sm focus:outline-none focus:ring-2 resize-none transition-all ${detailErrors.address ? 'border-red-400 bg-red-50' : 'border-bakery-100 bg-bakery-50 focus:border-bakery-400 focus:ring-bakery-100'}`} />
 //                             </div>
 //                             {detailErrors.address && <p className="text-red-500 text-xs mt-1">{detailErrors.address}</p>}
 //                             <p className="font-body text-xs text-gray-400 mt-2 flex items-center gap-1.5">
-//                               <Navigation size={11} /> We currently deliver within Ajmer city only.
+//                               <Navigation size={11} /> We currently deliver within newai city only.
 //                             </p>
 //                           </motion.div>
 //                         )}
@@ -949,7 +949,7 @@
 //                               <Store size={18} className="text-amber-600 shrink-0 mt-0.5" />
 //                               <div>
 //                                 <p className="font-body font-bold text-amber-800 text-sm">Pickup Location</p>
-//                                 <p className="font-body text-xs text-amber-700 mt-0.5">12, Naya Bazaar, Ajmer, Rajasthan 305001</p>
+//                                 <p className="font-body text-xs text-amber-700 mt-0.5">12, Naya Bazaar, newai, Rajasthan 305001</p>
 //                                 <p className="font-body text-xs text-amber-600 mt-1">⏰ Mon–Sat 7am–9pm · Sun 8am–7pm</p>
 //                               </div>
 //                             </div>
@@ -1038,7 +1038,7 @@
 //                           <>
 //                             <div className="bg-bakery-50/60 rounded-xl p-3 border border-bakery-100">
 //                               <p className="font-body text-xs text-gray-400 mb-0.5">🏪 Pickup From</p>
-//                               <p className="font-body text-sm font-semibold text-mocha">12, Naya Bazaar, Ajmer</p>
+//                               <p className="font-body text-sm font-semibold text-mocha">12, Naya Bazaar, newai</p>
 //                             </div>
 //                             <div className="bg-bakery-50/60 rounded-xl p-3 border border-bakery-100">
 //                               <p className="font-body text-xs text-gray-400 mb-0.5">⏰ Pickup Time</p>
@@ -1399,7 +1399,7 @@ export default function CheckoutPage() {
         .join('%0A');
 
       const orderInfo = details.orderType === 'pickup'
-        ? `🏪 *Order Type:* Store Pickup%0A⏰ *Pickup Time:* ${details.pickupTime}%0A📍 *From:* 12, Naya Bazaar, Ajmer`
+        ? `🏪 *Order Type:* Store Pickup%0A⏰ *Pickup Time:* ${details.pickupTime}%0A📍 *From:* 12, Naya Bazaar, newai`
         : `🚚 *Order Type:* Home Delivery%0A📍 *Address:* ${details.address}`;
 
       const payText = payMethod === 'upi'
@@ -2047,7 +2047,7 @@ export default function CheckoutPage() {
                               <textarea
                                 value={details.address}
                                 onChange={e => setDetails(d => ({ ...d, address: e.target.value }))}
-                                placeholder="House/Flat no., Street, Area, Ajmer"
+                                placeholder="House/Flat no., Street, Area, newai"
                                 rows={3}
                                 className={`w-full pl-10 pr-4 py-3 border rounded-xl font-body text-sm focus:outline-none focus:ring-2 resize-none transition-all ${
                                   detailErrors.address ? 'border-red-400 bg-red-50' : 'border-bakery-100 bg-bakery-50 focus:border-bakery-400 focus:ring-bakery-100'
@@ -2056,7 +2056,7 @@ export default function CheckoutPage() {
                             </div>
                             {detailErrors.address && <p className="text-red-500 text-xs mt-1">{detailErrors.address}</p>}
                             <p className="font-body text-xs text-gray-400 mt-2 flex items-center gap-1.5">
-                              <Navigation size={11} /> We currently deliver within Ajmer city only.
+                              <Navigation size={11} /> We currently deliver within newai city only.
                             </p>
                           </motion.div>
                         )}
@@ -2073,7 +2073,7 @@ export default function CheckoutPage() {
                               <Store size={18} className="text-amber-600 shrink-0 mt-0.5" />
                               <div>
                                 <p className="font-body font-bold text-amber-800 text-sm">Pickup Location</p>
-                                <p className="font-body text-xs text-amber-700 mt-0.5">12, Naya Bazaar, Ajmer, Rajasthan 305001</p>
+                                <p className="font-body text-xs text-amber-700 mt-0.5">12, Naya Bazaar, newai, Rajasthan 305001</p>
                                 <p className="font-body text-xs text-amber-600 mt-1">⏰ Mon–Sat 7am–9pm · Sun 8am–7pm</p>
                               </div>
                             </div>
@@ -2169,7 +2169,7 @@ export default function CheckoutPage() {
                           <>
                             <div className="bg-bakery-50/60 rounded-xl p-3 border border-bakery-100">
                               <p className="font-body text-xs text-gray-400 mb-0.5">🏪 Pickup From</p>
-                              <p className="font-body text-sm font-semibold text-mocha">12, Naya Bazaar, Ajmer</p>
+                              <p className="font-body text-sm font-semibold text-mocha">12, Naya Bazaar, newai</p>
                             </div>
                             <div className="bg-bakery-50/60 rounded-xl p-3 border border-bakery-100">
                               <p className="font-body text-xs text-gray-400 mb-0.5">⏰ Pickup Time</p>

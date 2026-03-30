@@ -179,7 +179,7 @@ export default function HomePage() {
               Baked Fresh.<br />Served with Pride.
             </h2>
             <p className="font-body text-bakery-200 leading-relaxed mb-4">
-              Founded in 2008 by the Sharma family, Kanha Bakers began as a small neighborhood bakery with a single oven and an enormous dream — to bring European artisan baking techniques to the people of Ajmer.
+              Founded in 2008 by the Sharma family, Kanha Bakers began as a small neighborhood bakery with a single oven and an enormous dream — to bring European artisan baking techniques to the people of newai.
             </p>
             <p className="font-body text-bakery-200 leading-relaxed mb-8">
               Today we are Rajasthan's most beloved artisan bakery, yet every product is still made by hand, every morning, before the sun rises.
@@ -259,7 +259,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="font-body text-bakery-100 mb-10"
           >
-            Fresh batches ready every morning. Visit our store or order online — we deliver across Ajmer.
+            Fresh batches ready every morning. Visit our store or order online — we deliver across newai.
           </motion.p>
           <Link href="/menu" className="px-10 py-4 bg-white text-bakery-700 font-bold font-body rounded-full hover:bg-cream transition-all shadow-2xl inline-flex items-center gap-2 text-lg">
             View Full Menu <ArrowRight size={20} />

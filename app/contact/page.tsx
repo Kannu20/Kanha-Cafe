@@ -8,7 +8,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    lines: ['12, Naya Bazaar', 'Ajmer, Rajasthan 305001'],
+    lines: ['12, Naya Bazaar', 'newai, Rajasthan 305001'],
   },
   {
     icon: Phone,
@@ -231,7 +231,7 @@ export default function ContactPage() {
         >
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden flex-1 min-h-[400px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.5060734869737!2d74.6239733!3d26.4498954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e569bedf4dcd%3A0xadca97a7e83e7d1!2sNaya+Bazar%2C+Ajmer%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.5060734869737!2d74.6239733!3d26.4498954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e569bedf4dcd%3A0xadca97a7e83e7d1!2sNaya+Bazar%2C+newai%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0, minHeight: '400px' }}
@@ -246,7 +246,7 @@ export default function ContactPage() {
           <div className="bg-mocha rounded-3xl p-6 text-white">
             <h3 className="font-display text-xl font-bold mb-3">Can't come in person?</h3>
             <p className="font-body text-bakery-200 text-sm leading-relaxed mb-4">
-              We deliver across all of Ajmer city. Order online and have your fresh bakes delivered to your door within 45 minutes.
+              We deliver across all of newai city. Order online and have your fresh bakes delivered to your door within 45 minutes.
             </p>
             <div className="flex gap-3">
               <a href="tel:+919876543210" className="flex-1 py-3 bg-bakery-600 text-white font-body font-bold text-sm rounded-xl text-center hover:bg-bakery-700 transition-colors">

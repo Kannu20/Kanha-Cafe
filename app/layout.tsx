@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: 'Kanha Bakers — Crafted with Love, Baked with Pride',
-  description: 'Premium artisan bakery in Ajmer, Rajasthan. Cakes, pastries, snacks and beverages made fresh daily.',
+  description: 'Premium artisan bakery in newai, Rajasthan. Cakes, pastries, snacks and beverages made fresh daily.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

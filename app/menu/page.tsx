@@ -60,7 +60,7 @@ function MenuContent() {
             transition={{ delay: 0.2 }}
             className="font-body text-bakery-200 mt-4 max-w-xl mx-auto"
           >
-            Every item crafted with care, baked fresh each morning in our Ajmer kitchen.
+            Every item crafted with care, baked fresh each morning in our newai kitchen.
           </motion.p>
         </div>
       </div>

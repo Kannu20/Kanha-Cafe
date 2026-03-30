@@ -239,7 +239,7 @@ export const testimonials = [
   {
     id: 2,
     name: 'Rahul Mehta',
-    location: 'Ajmer',
+    location: 'newai',
     text: 'The croissants here are flakier than Paris. I know because I\'ve been. Started my mornings with their almond croissant — it\'s non-negotiable now.',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80',

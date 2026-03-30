@@ -33,7 +33,7 @@ const team = [
     name: 'Mohan Sharma',
     role: 'Founder & Head Baker',
     image: 'https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=300&q=80',
-    bio: 'Trained in Vienna and Paris before bringing his craft back to Ajmer in 2008.',
+    bio: 'Trained in Vienna and Paris before bringing his craft back to newai in 2008.',
   },
   {
     name: 'Sunita Sharma',
@@ -50,11 +50,11 @@ const team = [
 ];
 
 const milestones = [
-  { year: '2008', event: 'Opened our first 400 sq ft shop in Naya Bazaar, Ajmer with one oven.' },
+  { year: '2008', event: 'Opened our first 400 sq ft shop in Naya Bazaar, newai with one oven.' },
   { year: '2011', event: 'Expanded to a full production kitchen. Launched our signature croissant line.' },
   { year: '2015', event: 'Won Rajasthan Best Bakery Award for the first time.' },
   { year: '2018', event: 'Crossed 10,000 monthly orders. Hired our 25th team member.' },
-  { year: '2021', event: 'Launched online ordering and home delivery across Ajmer.' },
+  { year: '2021', event: 'Launched online ordering and home delivery across newai.' },
   { year: '2024', event: 'Celebrated 16 years and 500,000 happy customers.' },
 ];
 
@@ -89,7 +89,7 @@ export default function AboutPage() {
             className="font-display text-6xl md:text-7xl font-bold text-white leading-tight max-w-2xl"
           >
             Baked in<br />
-            <span className="italic text-caramel">Ajmer's Heart</span>
+            <span className="italic text-caramel">newai's Heart</span>
           </motion.h1>
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function AboutPage() {
             <p className="section-subtitle mb-2">Since 2008</p>
             <h2 className="section-title mb-6">From One Oven<br />to 50,000 Smiles</h2>
             <p className="font-body text-gray-600 leading-relaxed mb-5">
-              It all began on a quiet morning in 2008, when Mohan Sharma lit the oven in a tiny 400 sq ft shop in Naya Bazaar, Ajmer. He had spent years studying the craft of bread and pastry in Vienna and Paris, and returned home with one dream: to give the people of Rajasthan the pleasure of truly artisan baked goods.
+              It all began on a quiet morning in 2008, when Mohan Sharma lit the oven in a tiny 400 sq ft shop in Naya Bazaar, newai. He had spent years studying the craft of bread and pastry in Vienna and Paris, and returned home with one dream: to give the people of Rajasthan the pleasure of truly artisan baked goods.
             </p>
             <p className="font-body text-gray-600 leading-relaxed mb-5">
               His wife Sunita, a gifted pastry artist in her own right, joined him from day one. Together they perfected recipes that married European technique with Indian flavour — masala croissants, saffron éclairs, cardamom Danishes. The neighbourhood fell in love.
@@ -260,7 +260,7 @@ export default function AboutPage() {
             },
             {
               label: 'Our Vision',
-              text: 'To become India most beloved artisan bakery chain — expanding from Ajmer to every city while keeping every loaf as personal, as warm and as handcrafted as the first one Mohan ever baked.',
+              text: 'To become India most beloved artisan bakery chain — expanding from newai to every city while keeping every loaf as personal, as warm and as handcrafted as the first one Mohan ever baked.',
             },
           ].map(item => (
             <motion.div
