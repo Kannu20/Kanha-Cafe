@@ -56,9 +56,9 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-cream overflow-x-hidden w-full">
       {/* Hero */}
-      <div className="bg-gradient-to-br from-mocha to-[#5a2f18] py-20 sm:py-28 px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36">
+      <section className="bg-gradient-to-br from-mocha to-[#5a2f18] py-20 sm:py-28 px-4 sm:px-6 lg:px-8 pt-28 sm:pt-36 overflow-hidden">
         <div className="max-w-7xl mx-auto text-center">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -71,9 +71,9 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white"
+            className="font-display text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1]"
           >
-            Get in Touch
+            Get in <br className="xs:hidden" />Touch
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export default function ContactPage() {
             Custom cake orders, bulk enquiries, feedback or just a warm hello — we read every message personally.
           </motion.p>
         </div>
-      </div>
+      </section>
 
       {/* Contact info cards */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-8 mb-12 sm:mb-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -108,7 +108,8 @@ export default function ContactPage() {
       </div>
 
       {/* Form + Map */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
+      <div className="overflow-hidden w-full pb-16 sm:pb-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 sm:gap-10 lg:gap-12">
         {/* Contact Form */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
