@@ -41,13 +41,13 @@ export default function HomePage() {
         )}
 
         {/* Hero content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-16 grid lg:grid-cols-2 items-center gap-12 min-h-screen">
-          <div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32 lg:pt-24 pb-16 grid lg:grid-cols-2 items-center gap-8 lg:gap-12 min-h-[100dvh]">
+          <div className="flex flex-col justify-center text-center lg:text-left pt-10 lg:pt-0 items-center lg:items-start">
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="font-accent text-3xl text-caramel mb-2"
+              className="font-accent text-2xl sm:text-3xl text-caramel mb-2"
             >
               Welcome to
             </motion.p>
@@ -55,16 +55,16 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35 }}
-              className="font-display text-6xl sm:text-7xl lg:text-8xl font-bold text-white leading-none mb-6"
+              className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.1] mb-4 sm:mb-6"
             >
-              Kanha<br />
+              Kanha<br className="max-sm:hidden" />
               <span className="text-caramel italic">Bakers</span>
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="font-body text-lg text-bakery-200 max-w-md leading-relaxed mb-10"
+              className="font-body text-base sm:text-lg text-bakery-200 max-w-xs sm:max-w-md lg:max-w-lg leading-relaxed mb-8 sm:mb-10"
             >
               Artisan baked goods crafted with passion in the heart of Rajasthan. Every bite tells a story of love, tradition and the finest ingredients.
             </motion.p>
@@ -72,12 +72,12 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.65 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 w-full sm:w-auto"
             >
-              <Link href="/menu" className="bakery-btn text-base shadow-xl shadow-bakery-800/40">
+              <Link href="/menu" className="bakery-btn text-base shadow-xl shadow-bakery-800/40 w-full sm:w-auto justify-center">
                 Explore Menu <ArrowRight size={18} />
               </Link>
-              <Link href="/about" className="bakery-btn-outline border-white/40 text-white hover:bg-white hover:text-mocha text-base">
+              <Link href="/about" className="bakery-btn-outline border-white/40 text-white hover:bg-white hover:text-mocha text-base w-full sm:w-auto justify-center">
                 Our Story
               </Link>
             </motion.div>
@@ -111,9 +111,9 @@ export default function HomePage() {
       </section>
 
       {/* ── FEATURED PRODUCTS ───────────────────── */}
-      <section className="py-20 px-6">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 sm:mb-12">
             <motion.p
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -126,16 +126,16 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="section-title"
+              className="section-title text-3xl sm:text-4xl lg:text-5xl"
             >
               Fan Favourites
             </motion.h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-10 sm:mb-12">
             {featured.map((p, i) => <ProductCard key={p.id} product={p} index={i} />)}
           </div>
           <div className="text-center">
-            <Link href="/menu" className="bakery-btn text-base">
+            <Link href="/menu" className="bakery-btn text-base inline-flex">
               View Full Menu <ArrowRight size={18} />
             </Link>
           </div>
@@ -143,8 +143,8 @@ export default function HomePage() {
       </section>
 
       {/* ── ABOUT PREVIEW ───────────────────────── */}
-      <section className="py-20 bg-mocha">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+      <section className="py-16 sm:py-20 bg-mocha">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -173,18 +173,19 @@ export default function HomePage() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
+            className="text-center md:text-left mt-8 md:mt-0"
           >
-            <p className="font-accent text-3xl text-caramel mb-2">Our Story</p>
-            <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
-              Baked Fresh.<br />Served with Pride.
+            <p className="font-accent text-2xl sm:text-3xl text-caramel mb-2">Our Story</p>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+              Baked Fresh.<br className="hidden sm:block" />Served with Pride.
             </h2>
-            <p className="font-body text-bakery-200 leading-relaxed mb-4">
+            <p className="font-body text-sm sm:text-base text-bakery-200 leading-relaxed mb-4">
               Founded in 2008 by the Sharma family, Kanha Bakers began as a small neighborhood bakery with a single oven and an enormous dream — to bring European artisan baking techniques to the people of newai.
             </p>
-            <p className="font-body text-bakery-200 leading-relaxed mb-8">
+            <p className="font-body text-sm sm:text-base text-bakery-200 leading-relaxed mb-6 sm:mb-8">
               Today we are Rajasthan's most beloved artisan bakery, yet every product is still made by hand, every morning, before the sun rises.
             </p>
-            <Link href="/about" className="bakery-btn-outline border-caramel text-caramel hover:bg-caramel hover:text-white">
+            <Link href="/about" className="bakery-btn-outline border-caramel text-caramel hover:bg-caramel hover:text-white inline-flex w-full sm:w-auto justify-center">
               Read Full Story <ArrowRight size={18} />
             </Link>
           </motion.div>
@@ -192,13 +193,13 @@ export default function HomePage() {
       </section>
 
       {/* ── TESTIMONIALS ────────────────────────── */}
-      <section className="py-20 px-6 bg-cream">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-cream">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
+          <div className="text-center mb-10 sm:mb-12">
             <p className="section-subtitle mb-2">Happy Customers</p>
-            <h2 className="section-title">What People Say</h2>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl">What People Say</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {testimonials.map((t, i) => (
               <motion.div
                 key={t.id}
@@ -234,14 +235,14 @@ export default function HomePage() {
       </section>
 
       {/* ── FINAL CTA ───────────────────────────── */}
-      <section className="py-24 px-6 bg-gradient-to-br from-bakery-600 to-bakery-800 relative overflow-hidden">
+      <section className="py-20 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-bakery-600 to-bakery-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-grain opacity-20" />
         <div className="relative z-10 text-center max-w-2xl mx-auto">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-accent text-3xl text-bakery-100 mb-2"
+            className="font-accent text-2xl sm:text-3xl text-bakery-100 mb-2"
           >
             Ready to indulge?
           </motion.p>
@@ -249,7 +250,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-4xl sm:text-5xl font-bold text-white mb-6"
+            className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6"
           >
             Order Your Favourites
           </motion.h2>
@@ -257,11 +258,11 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-body text-sm sm:text-base text-bakery-100 mb-10 px-4 sm:px-0"
+            className="font-body text-sm sm:text-base text-bakery-100 mb-8 sm:mb-10 px-2 sm:px-0"
           >
             Fresh batches ready every morning. Visit our store or order online — we deliver across newai.
           </motion.p>
-          <Link href="/menu" className="px-8 py-3 sm:px-10 sm:py-4 bg-white text-bakery-700 font-bold font-body rounded-full hover:bg-cream transition-all shadow-2xl inline-flex items-center gap-2 text-base sm:text-lg">
+          <Link href="/menu" className="w-full sm:w-auto px-8 py-3.5 sm:px-10 sm:py-4 bg-white text-bakery-700 font-bold font-body rounded-full hover:bg-cream transition-all shadow-2xl inline-flex items-center justify-center gap-2 text-base sm:text-lg">
             View Full Menu <ArrowRight size={20} />
           </Link>
         </div>
