@@ -62,7 +62,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-cream">
       {/* Hero */}
-      <section className="relative h-[70vh] flex items-end overflow-hidden">
+      <section className="relative h-[60vh] sm:h-[70vh] flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80"
@@ -74,11 +74,11 @@ export default function AboutPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-mocha via-mocha/60 to-transparent" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-6 pb-16 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 w-full text-center sm:text-left">
           <motion.p
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-accent text-3xl text-caramel mb-2"
+            className="font-accent text-2xl sm:text-3xl text-caramel mb-2"
           >
             Our Story
           </motion.p>
@@ -86,17 +86,17 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.15 }}
-            className="font-display text-6xl md:text-7xl font-bold text-white leading-tight max-w-2xl"
+            className="font-display text-5xl sm:text-6xl md:text-7xl font-bold text-white leading-[1.1] max-w-2xl mx-auto sm:mx-0"
           >
-            Baked in<br />
-            <span className="italic text-caramel">newai's Heart</span>
+            Baked in<br className="max-sm:hidden" />
+            <span className="italic text-caramel"> newai's Heart</span>
           </motion.h1>
         </div>
       </section>
 
       {/* Story Section */}
-      <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -119,9 +119,9 @@ export default function AboutPage() {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-2 gap-3 sm:gap-4 mt-8 lg:mt-0"
           >
-            <div className="relative h-64 rounded-2xl overflow-hidden col-span-2">
+            <div className="relative h-48 sm:h-64 rounded-2xl overflow-hidden col-span-2">
               <Image
                 src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&q=80"
                 alt="Fresh bread"
@@ -130,7 +130,7 @@ export default function AboutPage() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
-            <div className="relative h-48 rounded-2xl overflow-hidden">
+            <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&q=80"
                 alt="Cake making"
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 sizes="(max-width: 1024px) 50vw, 25vw"
               />
             </div>
-            <div className="relative h-48 rounded-2xl overflow-hidden">
+            <div className="relative h-32 sm:h-48 rounded-2xl overflow-hidden">
               <Image
                 src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80"
                 alt="Croissants"
@@ -153,13 +153,13 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-20 px-6 bg-mocha">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-mocha">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
-            <p className="font-accent text-3xl text-caramel mb-2">What We Stand For</p>
-            <h2 className="font-display text-5xl font-bold text-white">Our Values</h2>
+          <div className="text-center mb-10 sm:mb-14">
+            <p className="font-accent text-2xl sm:text-3xl text-caramel mb-2">What We Stand For</p>
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Our Values</h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}
@@ -181,11 +181,11 @@ export default function AboutPage() {
       </section>
 
       {/* Timeline */}
-      <section className="py-20 px-6 bg-cream">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-cream">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 sm:mb-14">
             <p className="section-subtitle mb-2">Our Journey</p>
-            <h2 className="section-title">16 Years of Growth</h2>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl">16 Years of Growth</h2>
           </div>
           <div className="relative">
             <div className="absolute left-8 sm:left-1/2 top-0 bottom-0 w-0.5 bg-bakery-200 -translate-x-1/2" />
@@ -214,13 +214,13 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-20 px-6 bg-bakery-50">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-bakery-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10 sm:mb-14">
             <p className="section-subtitle mb-2">The Bakers</p>
-            <h2 className="section-title">Meet Our Team</h2>
+            <h2 className="section-title text-3xl sm:text-4xl lg:text-5xl">Meet Our Team</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
             {team.map((member, i) => (
               <motion.div
                 key={member.name}
@@ -251,8 +251,8 @@ export default function AboutPage() {
       </section>
 
       {/* Mission / Vision */}
-      <section className="py-20 px-6 bg-gradient-to-br from-bakery-600 to-bakery-800">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-bakery-600 to-bakery-800">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 sm:gap-8">
           {[
             {
               label: 'Our Mission',
@@ -268,9 +268,9 @@ export default function AboutPage() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white/10 border border-white/20 rounded-3xl p-8"
+              className="bg-white/10 border border-white/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-center sm:text-left"
             >
-              <p className="font-accent text-2xl text-caramel mb-3">{item.label}</p>
+              <p className="font-accent text-2xl text-caramel mb-2 sm:mb-3">{item.label}</p>
               <p className="font-body text-bakery-100 leading-relaxed">{item.text}</p>
             </motion.div>
           ))}
