@@ -88,13 +88,13 @@ export default function HomePage() {
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.8 }}
-            className="hidden lg:grid grid-cols-2 gap-4 self-center"
+            className="grid grid-cols-2 gap-3 sm:gap-4 lg:self-center mt-10 lg:mt-0 w-full"
           >
             {stats.map(({ icon: Icon, value, label }) => (
-              <div key={label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 text-center hover:bg-white/20 transition-all">
-                <Icon size={24} className="text-caramel mx-auto mb-2" />
-                <p className="font-display text-3xl font-bold text-white">{value}</p>
-                <p className="font-body text-sm text-bakery-200">{label}</p>
+              <div key={label} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-4 sm:p-6 text-center hover:bg-white/20 transition-all">
+                <Icon size={24} className="text-caramel mx-auto mb-2 w-5 h-5 sm:w-6 sm:h-6" />
+                <p className="font-display text-2xl sm:text-3xl font-bold text-white">{value}</p>
+                <p className="font-body text-xs sm:text-sm text-bakery-200">{label}</p>
               </div>
             ))}
           </motion.div>
@@ -144,7 +144,7 @@ export default function HomePage() {
 
       {/* ── ABOUT PREVIEW ───────────────────────── */}
       <section className="py-20 bg-mocha">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -152,7 +152,7 @@ export default function HomePage() {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="relative h-[420px] rounded-3xl overflow-hidden shadow-2xl">
+            <div className="relative h-[300px] sm:h-[400px] lg:h-[420px] rounded-3xl overflow-hidden shadow-2xl">
               <Image
                 src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80"
                 alt="Kanha Bakers kitchen"
@@ -162,9 +162,9 @@ export default function HomePage() {
               />
             </div>
             {/* Floating badge */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-bakery-600 rounded-3xl flex flex-col items-center justify-center shadow-2xl rotate-6">
-              <span className="font-display text-4xl font-bold text-white">16</span>
-              <span className="font-body text-xs text-bakery-100 text-center leading-tight">Years of<br />Excellence</span>
+            <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 bg-bakery-600 rounded-2xl sm:rounded-3xl flex flex-col items-center justify-center shadow-2xl rotate-6">
+              <span className="font-display text-3xl sm:text-4xl font-bold text-white">16</span>
+              <span className="font-body text-[10px] sm:text-xs text-bakery-100 text-center leading-tight">Years of<br />Excellence</span>
             </div>
           </motion.div>
 
@@ -175,7 +175,7 @@ export default function HomePage() {
             transition={{ duration: 0.7 }}
           >
             <p className="font-accent text-3xl text-caramel mb-2">Our Story</p>
-            <h2 className="font-display text-5xl font-bold text-white mb-6 leading-tight">
+            <h2 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 leading-tight">
               Baked Fresh.<br />Served with Pride.
             </h2>
             <p className="font-body text-bakery-200 leading-relaxed mb-4">
@@ -249,7 +249,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-5xl font-bold text-white mb-6"
+            className="font-display text-4xl sm:text-5xl font-bold text-white mb-6"
           >
             Order Your Favourites
           </motion.h2>
@@ -257,11 +257,11 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-body text-bakery-100 mb-10"
+            className="font-body text-sm sm:text-base text-bakery-100 mb-10 px-4 sm:px-0"
           >
             Fresh batches ready every morning. Visit our store or order online — we deliver across newai.
           </motion.p>
-          <Link href="/menu" className="px-10 py-4 bg-white text-bakery-700 font-bold font-body rounded-full hover:bg-cream transition-all shadow-2xl inline-flex items-center gap-2 text-lg">
+          <Link href="/menu" className="px-8 py-3 sm:px-10 sm:py-4 bg-white text-bakery-700 font-bold font-body rounded-full hover:bg-cream transition-all shadow-2xl inline-flex items-center gap-2 text-base sm:text-lg">
             View Full Menu <ArrowRight size={20} />
           </Link>
         </div>
