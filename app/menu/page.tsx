@@ -555,7 +555,7 @@ export default function MenuPage() {
             <span className="font-nunito text-xs text-mocha/60 font-semibold uppercase tracking-wider">
               {activeCategory} {search && `· "${search}"`}
             </span>
-            <button
+            {/* <button
               onClick={() => setShowFilters(!showFilters)}
               className="flex items-center gap-1.5 text-caramel font-nunito font-semibold text-xs px-3 py-1.5 rounded-full border border-caramel/30"
             >
@@ -564,7 +564,7 @@ export default function MenuPage() {
               <motion.span animate={{ rotate: showFilters ? 180 : 0 }} transition={{ duration: 0.2 }}>
                 <FiChevronDown size={12} />
               </motion.span>
-            </button>
+            </button> */}
           </div>
 
           {/* Scrollable pills */}
