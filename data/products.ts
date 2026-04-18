@@ -1,4 +1,4 @@
-type Category =
+export type Category =
   | 'All'
   | 'Main Course'
   | 'Breads'
@@ -42,7 +42,7 @@ export interface Product {
 //  Extracted from official menu cards (both images)
 // ─────────────────────────────────────────────────────────────
 
-export const categories = [
+export const categories: Category[] = [
   'All',
   'Main Course', 'Breads', 'Rice', 'Raita', 'Papad',
   'Ice Cream', 'Dessert',
@@ -57,7 +57,7 @@ export const catEmojis = {
   'Ice Cream':'🍦',Dessert:'🍮',Beverages:'☕',Mocktails:'🍹',Shakes:'🥤',
   Pizza:'🍕',Burger:'🍔',Sandwich:'🥪',Momos:'🥟',Roll:'🌯',
   Tandoor:'🔥','South Indian':'🫔','Pav Bhaji':'🧇',
-  Chinese:'🍜',Chaat:'🍡',Pasta:'🍝',Paratha:'🫓',Chole:'🫘',Fries:'🍟',
+  Chinese:'🍜',Chaat:'🍡',Pasta:'🍝',Paratha:'🫓',Chole:'🫘',Fries:'🍟','North Indian': '🍲'
 };
 
 export const products: Product[] = [

@@ -177,7 +177,7 @@ import { motion, AnimatePresence, useInView } from 'framer-motion';
 import { FiSearch, FiX, FiShoppingCart, FiStar, FiFilter, FiChevronDown } from 'react-icons/fi';
 import { HiOutlineSparkles } from 'react-icons/hi';
 import { useCart } from '@/context/CartContext';
-import { categories, catEmojis, Product, products } from '@/data/products';
+import { categories, catEmojis, Product, products, Category } from '@/data/products';
 
 
 /* ─── Skeleton Card ─── */
@@ -304,28 +304,28 @@ function ProductCard({ product, index = 0 }: ProductCardProps) {
   );
 }
 
-type Category =
-  | 'All'
-  | 'Main Course'
-  | 'Breads'
-  | 'Rice'
-  | 'Raita'
-  | 'Papad'
-  | 'Ice Cream'
-  | 'Dessert'
-  | 'Beverages'
-  | 'Mocktails'
-  | 'Shakes'
-  | 'Pizza'
-  | 'Burger'
-  | 'Sandwich'
-  | 'Momos'
-  | 'Roll'
-  | 'Tandoor'
-  | 'South Indian'
-  | 'Pav Bhaji'
-  | 'North Indian'
-  | 'Paratha';
+// type Category =
+//   | 'All'
+//   | 'Main Course'
+//   | 'Breads'
+//   | 'Rice'
+//   | 'Raita'
+//   | 'Papad'
+//   | 'Ice Cream'
+//   | 'Dessert'
+//   | 'Beverages'
+//   | 'Mocktails'
+//   | 'Shakes'
+//   | 'Pizza'
+//   | 'Burger'
+//   | 'Sandwich'
+//   | 'Momos'
+//   | 'Roll'
+//   | 'Tandoor'
+//   | 'South Indian'
+//   | 'Pav Bhaji'
+//   | 'North Indian'
+//   | 'Paratha';
 
 
 type CategoryPillProps = {
@@ -435,6 +435,7 @@ export default function MenuPage() {
   setSearch('');
   setShowFilters(false);
 
+  const pillsRef = useRef<HTMLDivElement | null>(null);
   if (pillsRef.current) {
     const btn = pillsRef.current.querySelector<HTMLButtonElement>(
       `[data-cat="${cat}"]`
@@ -598,7 +599,7 @@ export default function MenuPage() {
             {search
               ? <>Showing <strong className="text-espresso">{filtered.length}</strong> results for <strong className="text-caramel">"{search}"</strong></>
               : activeCategory !== 'All'
-                ? <><strong className="text-espresso">{filtered.length}</strong> items in <strong className="text-caramel">{catEmojis[activeCategory]} {activeCategory}</strong></>
+                ? <><strong className="text-espresso">{filtered.length}</strong> items in <strong className="text-caramel">{activeCategory}</strong></>
                 : <><strong className="text-espresso">{products.length}</strong> items across all categories</>
             }
           </p>
