@@ -399,12 +399,21 @@ export default function MenuPage() {
 
   const map: Partial<GroupedProducts> = {};
 
+  // products.forEach((p) => {
+  //   if (!map[p.category]) {
+  //     map[p.category] = [];
+  //   }
+  //   map[p.category]!.push(p);
+  // });
   products.forEach((p) => {
-    if (!map[p.category]) {
-      map[p.category] = [];
-    }
-    map[p.category]!.push(p);
-  });
+  const cat: Category = p.category; // force TS to lock type
+
+  if (!map[cat]) {
+    map[cat] = [];
+  }
+
+  map[cat]!.push(p);
+});
 
   return map as GroupedProducts;
 }, [activeCategory, search]);

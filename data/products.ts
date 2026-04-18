@@ -1,34 +1,39 @@
-// type Category =
-//   | 'All'
-//   | 'Main Course'
-//   | 'Breads'
-//   | 'Rice'
-//   | 'Raita'
-//   | 'Papad'
-//   | 'Ice Cream'
-//   | 'Dessert'
-//   | 'Beverages'
-//   | 'Mocktails'
-//   | 'Shakes'
-//   | 'Pizza'
-//   | 'Burger'
-//   | 'Sandwich'
-//   | 'Momos'
-//   | 'Roll'
-//   | 'Tandoor'
-//   | 'South Indian'
-//   | 'Pav Bhaji'
-//   | 'North Indian'
-//   | 'Paratha';
-
+type Category =
+  | 'All'
+  | 'Main Course'
+  | 'Breads'
+  | 'Rice'
+  | 'Raita'
+  | 'Papad'
+  | 'Ice Cream'
+  | 'Dessert'
+  | 'Beverages'
+  | 'Mocktails'
+  | 'Shakes'
+  | 'Pizza'
+  | 'Burger'
+  | 'Sandwich'
+  | 'Momos'
+  | 'Roll'
+  | 'Tandoor'
+  | 'South Indian'
+  | 'Pav Bhaji'
+  | 'Chinese'
+  | 'Chaat'
+  | 'Pasta'
+  | 'Chole'
+  | 'Fries'
+  | 'North Indian'
+  | 'Paratha';
+  
 export interface Product {
   id: string;
   name: string;
-  category: string;
+  category: Category;
   price: number;
   image: string;
   description: string;
-  badge?: string;
+  badge?: string | null;
   rating: number;
   reviews: number;
 }
@@ -55,7 +60,7 @@ export const catEmojis = {
   Chinese:'🍜',Chaat:'🍡',Pasta:'🍝',Paratha:'🫓',Chole:'🫘',Fries:'🍟',
 };
 
-export const products = [
+export const products: Product[] = [
 
   // ── MAIN COURSE ──────────────────────────────────────────────
   { id:'mc1',  category:'Main Course', name:'Paneer Lababdar',       price:280, badge:'Popular',    rating:4.7, reviews:128, description:'Rich creamy paneer in a velvety tomato-onion gravy.',               image:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=400&h=300&fit=crop' },
