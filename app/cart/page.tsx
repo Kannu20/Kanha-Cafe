@@ -15,12 +15,12 @@ export default function CartPage() {
   return (
     <div className="min-h-screen bg-cream pt-24 pb-16">
       {/* Header */}
-      <div className="bg-gradient-to-br from-mocha to-[#5a2f18] py-14 px-6 mb-10">
+      <div className="bg-gradient-to-br from-mocha to-[#5a2f18] py-8 sm:py-14 px-4 sm:px-6 lg:px-8 mb-6 sm:mb-10">
         <div className="max-w-7xl mx-auto">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-5xl font-bold text-white"
+            className="font-display text-4xl sm:text-5xl font-bold text-white"
           >
             Your Cart
           </motion.h1>
@@ -35,24 +35,24 @@ export default function CartPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {items.length === 0 ? (
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="text-center py-24"
+            className="text-center py-16 sm:py-24"
           >
-            <div className="w-24 h-24 bg-bakery-50 rounded-3xl flex items-center justify-center mx-auto mb-6">
-              <ShoppingCart size={40} className="text-bakery-300" />
+            <div className="w-20 h-20 sm:w-24 sm:h-24 bg-bakery-50 rounded-3xl flex items-center justify-center mx-auto mb-6">
+              <ShoppingCart size={40} className="text-bakery-300 w-8 h-8 sm:w-10 sm:h-10" />
             </div>
-            <h3 className="font-display text-3xl font-bold text-mocha mb-3">Nothing here yet</h3>
-            <p className="font-body text-gray-500 mb-8">Explore our menu and add items to your cart.</p>
-            <Link href="/menu" className="bakery-btn text-base">
+            <h3 className="font-display text-2xl sm:text-3xl font-bold text-mocha mb-3">Nothing here yet</h3>
+            <p className="font-body text-sm sm:text-base text-gray-500 mb-8 max-w-sm mx-auto">Explore our menu and add items to your cart.</p>
+            <Link href="/menu" className="bakery-btn text-base inline-flex">
               Browse Menu <ArrowRight size={18} />
             </Link>
           </motion.div>
         ) : (
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
             {/* Items list */}
             <div className="lg:col-span-2 space-y-4">
               <div className="flex items-center justify-between mb-2">
@@ -73,8 +73,8 @@ export default function CartPage() {
 
             {/* Order summary */}
             <div className="lg:col-span-1">
-              <div className="bg-white rounded-3xl shadow-lg p-6 sticky top-28">
-                <h3 className="font-display text-xl font-bold text-mocha mb-6">Order Summary</h3>
+              <div className="bg-white rounded-2xl sm:rounded-3xl shadow-lg p-5 sm:p-6 sticky top-28 mt-6 lg:mt-0 border border-bakery-100">
+                <h3 className="font-display text-lg sm:text-xl font-bold text-mocha mb-6">Order Summary</h3>
 
                 <div className="space-y-3 mb-4">
                   {items.map(item => (
@@ -103,14 +103,14 @@ export default function CartPage() {
                   )}
                 </div>
 
-                <div className="flex justify-between items-center mb-6 p-4 bg-bakery-50 rounded-2xl border border-bakery-100">
-                  <span className="font-display text-lg font-bold text-mocha">Total</span>
-                  <span className="font-display text-2xl font-bold text-bakery-700">₹{grandTotal}</span>
+                <div className="flex justify-between items-center mb-6 p-3 sm:p-4 bg-bakery-50 rounded-xl sm:rounded-2xl border border-bakery-100">
+                  <span className="font-display text-base sm:text-lg font-bold text-mocha">Total</span>
+                  <span className="font-display text-xl sm:text-2xl font-bold text-bakery-700">₹{grandTotal}</span>
                 </div>
 
                 <Link
                   href="/checkout"
-                  className="bakery-btn w-full justify-center text-base py-4"
+                  className="bakery-btn w-full justify-center text-sm sm:text-base py-3 sm:py-4"
                 >
                   Proceed to Checkout <ArrowRight size={18} />
                 </Link>
