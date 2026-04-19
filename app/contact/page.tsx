@@ -13,7 +13,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Call Us',
-    lines: ['+91 98765 43210', '+91 96789 01234'],
+    lines: ['+91 81188 66587', '+91 96789 01234'],
   },
   {
     icon: Mail,
@@ -250,10 +250,10 @@ export default function ContactPage() {
                 We deliver across all of newai city. Order online and have your fresh bakes delivered to your door within 45 minutes.
               </p>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
-                <a href="tel:+919876543210" className="flex-1 py-2.5 sm:py-3 bg-bakery-600 text-white font-body font-bold text-sm rounded-xl text-center hover:bg-bakery-700 transition-colors">
+                <a href="tel:+9181188 66587" className="flex-1 py-2.5 sm:py-3 bg-bakery-600 text-white font-body font-bold text-sm rounded-xl text-center hover:bg-bakery-700 transition-colors">
                   📞 Call Now
                 </a>
-                <a href="https://wa.me/919876543210" className="flex-1 py-2.5 sm:py-3 bg-green-600 text-white font-body font-bold text-sm rounded-xl text-center hover:bg-green-700 transition-colors">
+                <a href="https://wa.me/9181188 66587" className="flex-1 py-2.5 sm:py-3 bg-green-600 text-white font-body font-bold text-sm rounded-xl text-center hover:bg-green-700 transition-colors">
                   💬 WhatsApp
                 </a>
               </div>

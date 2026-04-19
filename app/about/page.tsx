@@ -54,7 +54,7 @@ const milestones = [
   { year: '2015', event: 'Won Rajasthan Best Bakery Award for the first time.' },
   { year: '2018', event: 'Crossed 10,000 monthly orders. Hired our 25th team member.' },
   { year: '2021', event: 'Launched online ordering and home delivery across newai.' },
-  { year: '2024', event: 'Celebrated 16 years and 500,000 happy customers.' },
+  { year: '2026', event: 'Celebrated 16 years and 500,000 happy customers.' },
 ];
 
 export default function AboutPage() {

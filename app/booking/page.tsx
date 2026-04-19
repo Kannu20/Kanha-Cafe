@@ -169,7 +169,7 @@ export default function BookingPage() {
                     <input 
                       type="tel" 
                       name="phone"
-                      placeholder="9876543210"
+                      placeholder="81188 66587"
                       value={formData.phone}
                       onChange={handleInputChange}
                       className={`w-full pl-16 pr-4 py-3 bg-gray-50 border-2 rounded-xl outline-none transition-all ${errors.phone ? 'border-red-400 focus:bg-white focus:border-red-500' : 'border-gray-200 focus:bg-white focus:border-bakery-500'}`}
@@ -298,7 +298,7 @@ export default function BookingPage() {
 
             <div className="mt-8 bg-black/30 p-5 rounded-2xl border border-gray-800">
                <p className="text-sm text-gray-400 mb-2 font-bold uppercase tracking-widest">Contact Us</p>
-               <p className="font-display text-2xl font-bold text-white flex items-center gap-2"><Phone size={24} className="text-bakery-400"/> +91 98765 43210</p>
+               <p className="font-display text-2xl font-bold text-white flex items-center gap-2"><Phone size={24} className="text-bakery-400"/> +91 81188 66587</p>
             </div>
           </div>
           

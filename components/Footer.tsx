@@ -12,7 +12,7 @@ const links = {
     { label: 'Contact', href: '/contact' },
   ],
   Categories: [
-    { label: 'Cakes', href: '/menu?cat=Cakes' },
+    { label: 'Cakes', href: '/menu?cat=breads' },
     { label: 'Pastries', href: '/menu?cat=Pastries' },
     { label: 'Snacks', href: '/menu?cat=Snacks' },
     { label: 'Beverages', href: '/menu?cat=Beverages' },
@@ -83,7 +83,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-caramel shrink-0" />
-                <a href="tel:+919876543210" className="font-body text-sm text-bakery-200 hover:text-caramel transition-colors">+91 98765 43210</a>
+                <a href="tel:+9181188 66587" className="font-body text-sm text-bakery-200 hover:text-caramel transition-colors">+91 81188 66587</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-caramel shrink-0" />
@@ -101,7 +101,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-bakery-400">
-            © 2024 Kanha Bakers. All rights reserved. Made with ♥ in newai.
+            © 2026 Kanha Bakers. All rights reserved. Made with ♥ in newai.
           </p>
           <p className="font-accent text-lg text-caramel">
             Crafted with love, baked with pride.
