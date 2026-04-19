@@ -75,26 +75,26 @@ export const products: Product[] = [
   { id:'mc10', category:'Main Course', name:'Dal Tadka',             price:180, badge:null,         rating:4.4, reviews:120, description:'Slow-cooked lentils with a smoky tadka finish.',                     image:'https://images.unsplash.com/photo-1605769927692-b7a50e0a16f4?w=400&h=300&fit=crop' },
 
   // ── BREADS ───────────────────────────────────────────────────
-  { id:'br1', category:'Breads', name:'Butter Tawa Roti',         price:15,  badge:null,        rating:4.3, reviews:220, description:'Soft whole-wheat roti cooked on tawa, finished with butter.',    image:'https://images.unsplash.com/photo-1604908176997-431f6b47c5e5?w=400&h=300&fit=crop' },
-  { id:'br2', category:'Breads', name:'Butter Tandoori Roti',     price:25,  badge:'Charred ♨', rating:4.5, reviews:195, description:'Fluffy tandoori roti with a charred buttery finish.',             image:'https://images.unsplash.com/photo-1604908176997-431f6b47c5e5?w=400&h=300&fit=crop' },
-  { id:'gb1', category:'Breads', name:'Cheese Supreme Garlic Bread',price:110,badge:null,       rating:4.5, reviews:148, description:'Cheesy garlic bread toasted to a golden crisp.',                image:'https://images.unsplash.com/photo-1619535860434-cf9b902b8531?w=400&h=300&fit=crop' },
-  { id:'gb2', category:'Breads', name:'Spicy Garlic Bread',       price:120, badge:'Spicy 🌶',  rating:4.6, reviews:165, description:'Garlic bread loaded with chilli flakes and mixed herbs.',       image:'https://images.unsplash.com/photo-1619535860434-cf9b902b8531?w=400&h=300&fit=crop' },
-  { id:'gb3', category:'Breads', name:'Exotica Garlic Bread',     price:150, badge:'Premium',   rating:4.7, reviews:112, description:'Garlic bread topped with exotic veggies and melted cheese.',    image:'https://images.unsplash.com/photo-1619535860434-cf9b902b8531?w=400&h=300&fit=crop' },
+  { id:'br1', category:'Breads', name:'Butter Tawa Roti',         price:15,  badge:null,        rating:4.3, reviews:220, description:'Soft whole-wheat roti cooked on tawa, finished with butter.',    image:'/images/tawa.webp' },
+  { id:'br2', category:'Breads', name:'Butter Tandoori Roti',     price:25,  badge:'Charred ♨', rating:4.5, reviews:195, description:'Fluffy tandoori roti with a charred buttery finish.',             image:'/images/tandoori.jpg' },
+  { id:'gb1', category:'Breads', name:'Cheese Supreme Garlic Bread',price:110,badge:null,       rating:4.5, reviews:148, description:'Cheesy garlic bread toasted to a golden crisp.',                image:'/images/cheese-bread.jpeg' },
+  { id:'gb2', category:'Breads', name:'Spicy Garlic Bread',       price:120, badge:'Spicy 🌶',  rating:4.6, reviews:165, description:'Garlic bread loaded with chilli flakes and mixed herbs.',       image:'/images/spicy-bread.jpeg' },
+  { id:'gb3', category:'Breads', name:'Exotica Garlic Bread',     price:150, badge:'Premium',   rating:4.7, reviews:112, description:'Garlic bread topped with exotic veggies and melted cheese.',    image:'/images/exotic-bread.jpeg' },
 
   // ── RICE ─────────────────────────────────────────────────────
-  { id:'ri1', category:'Rice', name:'Jeera Rice',  price:120, badge:null,       rating:4.4, reviews:88,  description:'Fragrant basmati tempered with cumin seeds and ghee.',       image:'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=400&h=300&fit=crop' },
-  { id:'ri2', category:'Rice', name:'Tawa Pulav',  price:140, badge:null,       rating:4.3, reviews:62,  description:'Street-style tawa pulav with pav bhaji masala and veggies.', image:'https://images.unsplash.com/photo-1536304929831-ee1ca9d44906?w=400&h=300&fit=crop' },
-  { id:'ri3', category:'Rice', name:'Veg Biryani', price:230, badge:'Special',  rating:4.7, reviews:145, description:'Layered basmati biryani with whole spices and vegetables.',   image:'https://images.unsplash.com/photo-1563379091339-03246963d96c?w=400&h=300&fit=crop' },
+  { id:'ri1', category:'Rice', name:'Jeera Rice',  price:120, badge:null,       rating:4.4, reviews:88,  description:'Fragrant basmati tempered with cumin seeds and ghee.',       image:'/images/jeera.jpg' },
+  { id:'ri2', category:'Rice', name:'Tawa Pulav',  price:140, badge:null,       rating:4.3, reviews:62,  description:'Street-style tawa pulav with pav bhaji masala and veggies.', image:'/images/tawa-pulao.jpg' },
+  { id:'ri3', category:'Rice', name:'Veg Biryani', price:230, badge:'Special',  rating:4.7, reviews:145, description:'Layered basmati biryani with whole spices and vegetables.',   image:'/images/biryani.jpg' },
 
   // ── RAITA ────────────────────────────────────────────────────
-  { id:'ra1', category:'Raita', name:'Plain Raita', price:120, badge:null, rating:4.2, reviews:30, description:'Cool yogurt with a pinch of cumin and black salt.',        image:'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop' },
-  { id:'ra2', category:'Raita', name:'Bundi Raita', price:140, badge:null, rating:4.3, reviews:28, description:'Chilled yogurt with crispy bundi and roasted cumin.',      image:'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop' },
-  { id:'ra3', category:'Raita', name:'Veg Raita',   price:160, badge:null, rating:4.4, reviews:35, description:'Yogurt loaded with fresh chopped vegetables and herbs.',  image:'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=400&h=300&fit=crop' },
-  { id:'ra4', category:'Raita', name:'Chach',        price:50,  badge:null, rating:4.5, reviews:90, description:'Spiced buttermilk — the perfect digestive after a meal.', image:'https://images.unsplash.com/photo-1559181567-c3190bded94e?w=400&h=300&fit=crop' },
+  { id:'ra1', category:'Raita', name:'Plain Raita', price:120, badge:null, rating:4.2, reviews:30, description:'Cool yogurt with a pinch of cumin and black salt.',        image:'/images/raita.jpg' },
+  { id:'ra2', category:'Raita', name:'Bundi Raita', price:140, badge:null, rating:4.3, reviews:28, description:'Chilled yogurt with crispy bundi and roasted cumin.',      image:'/images/boondi-raita.jpg'},
+  { id:'ra3', category:'Raita', name:'Veg Raita',   price:160, badge:null, rating:4.4, reviews:35, description:'Yogurt loaded with fresh chopped vegetables and herbs.',  image:'/images/veg-raita.jpg' },
+  { id:'ra4', category:'Raita', name:'Chach',        price:50,  badge:null, rating:4.5, reviews:90, description:'Spiced buttermilk — the perfect digestive after a meal.', image:'/images/chach.jpg' },
 
   // ── PAPAD ────────────────────────────────────────────────────
-  { id:'pp1', category:'Papad', name:'Plain Papad',  price:25, badge:null, rating:4.1, reviews:22, description:'Crisp thin papad served alongside your meal.', image:'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&h=300&fit=crop' },
-  { id:'pp2', category:'Papad', name:'Masala Papad', price:50, badge:null, rating:4.3, reviews:35, description:'Roasted papad topped with onion, tomato and chaat masala.', image:'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=400&h=300&fit=crop' },
+  { id:'pp1', category:'Papad', name:'Plain Papad',  price:25, badge:null, rating:4.1, reviews:22, description:'Crisp thin papad served alongside your meal.', image:'/images/plain-papad.webp' },
+  { id:'pp2', category:'Papad', name:'Masala Papad', price:50, badge:null, rating:4.3, reviews:35, description:'Roasted papad topped with onion, tomato and chaat masala.', image:'/images/masala-papad.jpg' },
 
   // ── ICE CREAM ────────────────────────────────────────────────
   { id:'ic1', category:'Ice Cream', name:'Butter Scotch', price:40, badge:null,        rating:4.5, reviews:80,  description:'Classic butterscotch flavour with caramel crunch.', image:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop' },
@@ -160,7 +160,7 @@ export const products: Product[] = [
   { id:'sk16', category:'Shakes', name:'Nutella Shake',       price:200, badge:'Luxe',      rating:4.9, reviews:220, description:'Pure Nutella blended with milk and ice cream.',         image:'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop' },
 
   // ── PIZZA ────────────────────────────────────────────────────
-  { id:'pz1', category:'Pizza', name:'Margherita',          price:170, badge:'Classic',     rating:4.5, reviews:210, description:'Simple, perfect — fresh tomato sauce and melted cheese.',         image:'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop' },
+  { id:'pz1', category:'Pizza', name:'Margherita',          price:170, badge:'Classic',     rating:4.5, reviews:210, description:'Simple, perfect — fresh tomato sauce and melted cheese.',         image:'/images/pizza.jpeg' },
   { id:'pz2', category:'Pizza', name:'OTC Pizza',           price:200, badge:null,          rating:4.4, reviews:88,  description:'Onion, tomato, capsicum pizza with mozzarella.',                  image:'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?w=400&h=300&fit=crop' },
   { id:'pz3', category:'Pizza', name:'Exotica Pizza',       price:220, badge:null,          rating:4.5, reviews:105, description:'Exotic veggies with herbs on a crispy thin crust.',               image:'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&h=300&fit=crop' },
   { id:'pz4', category:'Pizza', name:'Cheese Burst',        price:250, badge:'Cheesy 🧀',   rating:4.8, reviews:285, description:'Cheese-stuffed crust that oozes with every single bite.',         image:'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop' },
@@ -257,7 +257,7 @@ export const products: Product[] = [
 
   // ── PASTA ────────────────────────────────────────────────────
   { id:'pa1', category:'Pasta', name:'Red Sauce Pasta',   price:140, badge:'Classic', rating:4.5, reviews:132, description:'Penne in a tangy tomato-based arrabbiata sauce.', image:'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop' },
-  { id:'pa2', category:'Pasta', name:'White Sauce Pasta', price:180, badge:'Creamy',  rating:4.6, reviews:158, description:'Pasta tossed in a rich and creamy béchamel sauce.', image:'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400&h=300&fit=crop' },
+  { id:'pa2', category:'Pasta', name:'White Sauce Pasta', price:180, badge:'Creamy',  rating:4.6, reviews:158, description:'Pasta tossed in a rich and creamy béchamel sauce.', image:'/images/pasta.jpeg' },
 
   // ── FRIES ────────────────────────────────────────────────────
   { id:'fr1', category:'Fries', name:'Plain Fries',     price:120, badge:'Classic', rating:4.3, reviews:210, description:'Golden crispy fries with ketchup on the side.', image:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&h=300&fit=crop' },
@@ -277,155 +277,6 @@ export const products: Product[] = [
   { id:'ck5', category:'Chole', name:'Extra Chole (B)', price:80,  badge:null,       rating:4.2, reviews:20,  description:'Extra bowl of bhature-style spiced chole.',             image:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop' },
   { id:'ck6', category:'Chole', name:'Extra Batura',    price:30,  badge:null,       rating:4.1, reviews:15,  description:'Extra bhatura on the side.',                            image:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&h=300&fit=crop' },
 ];
-// export const products: Product[] = [
-//   // Cakes
-
-//   // ================= MAIN COURSE =================
-//   {
-//     id: 'mc1',
-//     name: 'Paneer Lababdar',
-//     category: 'Main Course',
-//     price: 280,
-//     image: 'https://images.unsplash.com/photo-1601050690597-df0568f70950',
-//     description: 'Rich creamy paneer curry with tomato gravy.',
-//     badge: 'Popular',
-//     rating: 4.5,
-//     reviews: 120,
-//   },
-//   {
-//     id: 'mc2',
-//     name: 'Shahi Paneer',
-//     category: 'Main Course',
-//     price: 280,
-//     image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7',
-//     description: 'Royal Mughlai paneer curry with creamy texture.',
-//     rating: 4.6,
-//     reviews: 98,
-//   },
-
-//   // ================= BREADS =================
-//   {
-//     id: 'b1',
-//     name: 'Butter Tawa Roti',
-//     category: 'Breads',
-//     price: 15,
-//     image: 'https://images.unsplash.com/photo-1604908176997-431f6b47c5e5',
-//     description: 'Soft roti cooked on tawa with butter.',
-//     rating: 4.3,
-//     reviews: 40,
-//   },
-
-//   // ================= RICE =================
-//   {
-//     id: 'r1',
-//     name: 'Jeera Rice',
-//     category: 'Rice',
-//     price: 120,
-//     image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b',
-//     description: 'Basmati rice tempered with cumin seeds.',
-//     rating: 4.4,
-//     reviews: 60,
-//   },
-
-//   // ================= DESSERT =================
-//   {
-//     id: 'd1',
-//     name: 'Hot Brownie',
-//     category: 'Dessert',
-//     price: 110,
-//     image: 'https://images.unsplash.com/photo-1564355808539-22fda35bed7e',
-//     description: 'Warm chocolate brownie served fresh.',
-//     badge: 'Best Seller',
-//     rating: 4.8,
-//     reviews: 210,
-//   },
-
-//   // ================= BEVERAGES =================
-//   {
-//     id: 'bev1',
-//     name: 'Cold Coffee',
-//     category: 'Beverages',
-//     price: 100,
-//     image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735',
-//     description: 'Chilled coffee with creamy texture.',
-//     rating: 4.5,
-//     reviews: 150,
-//   },
-
-//   // ================= MOCKTAILS =================
-//   {
-//     id: 'm1',
-//     name: 'Blue Curacao',
-//     category: 'Mocktails',
-//     price: 120,
-//     image: 'https://images.unsplash.com/photo-1551024506-0bccd828d307',
-//     description: 'Refreshing citrus blue mocktail.',
-//     rating: 4.4,
-//     reviews: 90,
-//   },
-
-//   // ================= SHAKES =================
-//   {
-//     id: 'sh1',
-//     name: 'Oreo Shake',
-//     category: 'Shakes',
-//     price: 130,
-//     image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767',
-//     description: 'Thick shake blended with Oreo cookies.',
-//     badge: 'Fan Fav',
-//     rating: 4.9,
-//     reviews: 300,
-//   },
-
-//   // ================= PIZZA =================
-//   {
-//     id: 'pz1',
-//     name: 'Margherita Pizza',
-//     category: 'Pizza',
-//     price: 170,
-//     image: 'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e',
-//     description: 'Classic pizza with tomato and cheese.',
-//     rating: 4.5,
-//     reviews: 180,
-//   },
-
-//   // ================= BURGER =================
-//   {
-//     id: 'bg1',
-//     name: 'Veg Burger',
-//     category: 'Burger',
-//     price: 80,
-//     image: 'https://images.unsplash.com/photo-1550547660-d9450f859349',
-//     description: 'Crispy veg patty burger.',
-//     rating: 4.3,
-//     reviews: 140,
-//   },
-
-//   // ================= MOMOS =================
-//   {
-//     id: 'mm1',
-//     name: 'Fried Momos',
-//     category: 'Momos',
-//     price: 80,
-//     image: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f',
-//     description: 'Crispy fried veg momos.',
-//     rating: 4.6,
-//     reviews: 200,
-//   },
-
-//   // ================= SOUTH INDIAN =================
-//   {
-//     id: 'si1',
-//     name: 'Masala Dosa',
-//     category: 'South Indian',
-//     price: 120,
-//     image: 'https://images.unsplash.com/photo-1630383249896-424e482df921',
-//     description: 'Crispy dosa stuffed with potato masala.',
-//     rating: 4.7,
-//     reviews: 250,
-//   },
-// ];
-
 export const testimonials = [
   {
     id: 1,
