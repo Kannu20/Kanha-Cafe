@@ -163,7 +163,7 @@ export default function HomePage() {
             </div>
             {/* Floating badge */}
             <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 bg-bakery-600 rounded-2xl sm:rounded-3xl flex flex-col items-center justify-center shadow-2xl rotate-6">
-              <span className="font-display text-3xl sm:text-4xl font-bold text-white">16</span>
+              <span className="font-display text-3xl sm:text-4xl font-bold text-white">10</span>
               <span className="font-body text-[10px] sm:text-xs text-bakery-100 text-center leading-tight">Years of<br />Excellence</span>
             </div>
           </motion.div>
