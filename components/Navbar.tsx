@@ -145,7 +145,7 @@ export default function Navbar() {
 
             <div className="mt-auto pb-16">
               <p className="font-accent text-3xl text-caramel">Crafted with love.</p>
-              <p className="font-body text-sm text-crust mt-1">Since 2008 · newai, Rajasthan</p>
+              <p className="font-body text-sm text-crust mt-1">Since 2012 · newai, Rajasthan</p>
             </div>
           </motion.div>
         )}

@@ -39,7 +39,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="font-body text-sm text-bakery-200 leading-relaxed mb-6">
-              Baking happiness since 2008. Every creation is an expression of love, crafted with the finest ingredients from the heart of Rajasthan.
+              Baking happiness since 2012. Every creation is an expression of love, crafted with the finest ingredients from the heart of Rajasthan.
             </p>
             <div className="flex gap-3">
               {[Instagram, Facebook, Twitter].map((Icon, i) => (
