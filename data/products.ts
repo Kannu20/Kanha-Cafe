@@ -280,7 +280,7 @@ export const products: Product[] = [
 export const testimonials = [
   {
     id: 1,
-    name: 'Priya Sharma',
+    name: 'Priya chandlani',
     location: 'Jaipur',
     text: 'Kanha Bakers made my wedding cake and it was absolutely breathtaking. The Belgian Chocolate Truffle had our guests asking for seconds. Pure artistry!',
     rating: 5,
