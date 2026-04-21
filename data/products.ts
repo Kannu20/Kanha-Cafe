@@ -97,11 +97,11 @@ export const products: Product[] = [
   { id:'pp2', category:'Papad', name:'Masala Papad', price:50, badge:null, rating:4.3, reviews:35, description:'Roasted papad topped with onion, tomato and chaat masala.', image:'/images/masala-papad.jpg' },
 
   // ── ICE CREAM ────────────────────────────────────────────────
-  { id:'ic1', category:'Ice Cream', name:'Butter Scotch', price:40, badge:null,        rating:4.5, reviews:80,  description:'Classic butterscotch flavour with caramel crunch.', image:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop' },
-  { id:'ic2', category:'Ice Cream', name:'Vanilla',       price:40, badge:null,        rating:4.3, reviews:65,  description:'Creamy smooth vanilla bean ice cream.',             image:'https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=400&h=300&fit=crop' },
-  { id:'ic3', category:'Ice Cream', name:'Chocolate',     price:50, badge:'Favourite', rating:4.6, reviews:110, description:'Rich dark chocolate ice cream.',                     image:'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&h=300&fit=crop' },
-  { id:'ic4', category:'Ice Cream', name:'Mango',         price:50, badge:'Seasonal',  rating:4.7, reviews:95,  description:'Fresh Alphonso mango flavour ice cream.',            image:'https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=300&fit=crop' },
-  { id:'ic5', category:'Ice Cream', name:'Paan',          price:60, badge:'Unique',    rating:4.4, reviews:42,  description:'Betel leaf flavoured ice cream — a desi special.',  image:'https://images.unsplash.com/photo-1488900128323-21503983a07e?w=400&h=300&fit=crop' },
+  { id:'ic1', category:'Ice Cream', name:'Butter Scotch', price:40, badge:null,        rating:4.5, reviews:80,  description:'Classic butterscotch flavour with caramel crunch.', image:'/images/butterscotch.jpg' },
+  { id:'ic2', category:'Ice Cream', name:'Vanilla',       price:40, badge:null,        rating:4.3, reviews:65,  description:'Creamy smooth vanilla bean ice cream.',             image:'/images/vanila.jpg' },
+  { id:'ic3', category:'Ice Cream', name:'Chocolate',     price:50, badge:'Favourite', rating:4.6, reviews:110, description:'Rich dark chocolate ice cream.',                     image:'/images/choclate.jpg' },
+  { id:'ic4', category:'Ice Cream', name:'Mango',         price:50, badge:'Seasonal',  rating:4.7, reviews:95,  description:'Fresh Alphonso mango flavour ice cream.',            image:'/images/mango.jpg' },
+  { id:'ic5', category:'Ice Cream', name:'Paan',          price:60, badge:'Unique',    rating:4.4, reviews:42,  description:'Betel leaf flavoured ice cream — a desi special.',  image:'/images/paan.jpg' },
 
   // ── DESSERT ──────────────────────────────────────────────────
   { id:'ds1',  category:'Dessert', name:'Cheese Biscoff',         price:140, badge:'Trending',    rating:4.8, reviews:185, description:'Lotus Biscoff cheesecake served chilled.',                   image:'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop' },
