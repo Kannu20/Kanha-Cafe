@@ -214,7 +214,6 @@ export const products: Product[] = [
 
   // ── SOUTH INDIAN ─────────────────────────────────────────────
   { id: 'si1', category: 'South Indian', name: 'Plain Dosa', price: 100, badge: null, rating: 4.5, reviews: 198, description: 'Crispy golden dosa served with sambar and chutney.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIy3ULx59B_xAIlsMbr6FfXOxRzi_vbIhTLA&s' },
-  { id: 'si1', category: 'South Indian', name: 'Onion Masla Dosa', price: 100, badge: null, rating: 4.5, reviews: 198, description: 'Onion masala stuffed in a crispy dosa.', image: '/images/onion.jpg' },
   { id: 'si2', category: 'South Indian', name: 'Butter Masala Dosa', price: 120, badge: 'Bestseller', rating: 4.8, reviews: 290, description: 'Crispy dosa stuffed with spiced potato masala and butter.', image: 'https://images.raasakarts.com/insecure/fit/1000/1000/ce/0/plain/https://rasakart-assets.s3.ap-south-1.amazonaws.com/3fa229/prods/El3qOEJ7k2xFevxM3DrShujTVwoOrr04Szwv70vk.jpg@webp' },
   { id: 'si3', category: 'South Indian', name: 'Rawa Plain Dosa', price: 110, badge: null, rating: 4.4, reviews: 112, description: 'Thin crispy semolina dosa — light and lacy.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbNs_k00kLfeTMdEf2QXEcLI61RKma4zrghg&s' },
   { id: 'si4', category: 'South Indian', name: 'Rawa Masala Dosa', price: 130, badge: null, rating: 4.5, reviews: 98, description: 'Semolina dosa with a spiced potato filling.', image: 'https://cookilicious.com/wp-content/uploads/2022/04/Onion-Ravva-Dosa-35.jpg' },
