@@ -480,7 +480,7 @@ export default function MenuPage() {
             style={{ background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)' }}
           >
             <HiOutlineSparkles className="text-gold flex-shrink-0" />
-            <span>Open 11 AM – 11:30 PM · +91 8118866587</span>
+            <span>Open 11 AM – 10:00 PM · +91 8118866587</span>
           </motion.div>
 
           <motion.h1

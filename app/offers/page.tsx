@@ -493,15 +493,7 @@ export default function OffersPage() {
                 </div>
 
                 {/* ── Footer ── */}
-                <div style={{ textAlign: 'center', paddingTop: 24, borderTop: '1px solid rgba(255,255,255,.08)' }}>
-                    <p style={{
-                        fontFamily: 'Nunito, sans-serif', fontSize: 11, fontWeight: 600,
-                        color: 'rgba(255,255,255,.28)', lineHeight: 1.9
-                    }}>
-                        © 2025 <span style={{ color: '#D4A853' }}>Kanha Bakers</span> · Ajmer, Rajasthan<br />
-                        Open 11:00 AM – 11:30 PM · <span style={{ color: '#D4A853' }}>+91 8118866587</span>
-                    </p>
-                </div>
+                
 
             </div>
         </div>
