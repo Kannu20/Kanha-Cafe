@@ -8,7 +8,7 @@
 // import ProductCard from '@/components/ProductCard';
 // import { ProductSkeleton } from '@/components/Skeleton';
 
-// // type Category = 'All' | 'Cakes' | 'Pastries' | 'Snacks' | 'Beverages';
+// // type Category = '' | 'Cakes' | 'Pastries' | 'Snacks' | 'Beverages';
 // type Category =
 //   | 'All'
 //   | 'Main Course'
