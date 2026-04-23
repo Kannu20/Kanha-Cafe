@@ -18,7 +18,7 @@ const stats = [
   { icon: Heart, value: '100%', label: 'Made with Love' },
 ];
 
-const featured = products.filter(p => ['c1', 'p1', 's4', 'b2'].includes(p.id));
+const featured = products.filter(p => ['mc5', 'sk8', 'pz4', 'ds7'].includes(p.id));
 
 export default function HomePage() {
   const [mounted, setMounted] = useState(false);
