@@ -74,7 +74,8 @@ export const products: Product[] = [
   { id: 'mc9', category: 'Main Course', name: 'Dal Fry', price: 160, badge: 'Value', rating: 4.5, reviews: 180, description: 'Yellow lentils tempered with ghee, garlic and cumin.', image: '/images/dal-fry.png' },
   { id: 'mc10', category: 'Main Course', name: 'Dal Tadka', price: 180, badge: null, rating: 4.4, reviews: 120, description: 'Slow-cooked lentils with a smoky tadka finish.', image: '/images/dal-tadka.jpg' },
   { id: 'mc11', category: 'Main Course', name: 'Paneer Tikka Masala', price: 300, badge: 'Chef Special', rating: 4.9, reviews: 175, description: 'Smoky tandoor-grilled paneer in a rich, spiced tomato-cream gravy.', image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop' },
-
+  
+  
   // ── BREADS ───────────────────────────────────────────────────
   { id: 'br1', category: 'Breads', name: 'Butter Tawa Roti', price: 15, badge: null, rating: 4.3, reviews: 220, description: 'Soft whole-wheat roti cooked on tawa, finished with butter.', image: '/images/tawa.webp' },
   { id: 'br2', category: 'Breads', name: 'Butter Tandoori Roti', price: 25, badge: 'Charred ♨', rating: 4.5, reviews: 195, description: 'Fluffy tandoori roti with a charred buttery finish.', image: '/images/tandoori.jpg' },
