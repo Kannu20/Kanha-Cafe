@@ -1340,7 +1340,7 @@ export default function CheckoutPage() {
     transactionId: '', error: '', verified: false,
   });
 
-  const upiId      = '9602870828@ybl';
+  const upiId      = '8118866587@ybl';
   const localTotal = localItems.reduce((s, i) => s + i.price * i.quantity, 0);
   const deliveryFee = details.orderType === 'pickup' ? 0 : localTotal >= 500 ? 0 : 49;
   const grandTotal  = localTotal + deliveryFee;
@@ -1426,7 +1426,7 @@ export default function CheckoutPage() {
         `%0A%0A_via kanhabakers.in_`;
 
       clearCart();
-      window.open(`https://wa.me/919602870828?text=${msg}`, '_blank');
+      window.open(`https://wa.me/918118866587?text=${msg}`, '_blank');
       setStep('success');
       setConfirming(false);
     }, 1600);
@@ -1531,7 +1531,7 @@ export default function CheckoutPage() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <a
-                href="https://wa.me/919602870828"
+                href="https://wa.me/918118866587"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:flex-1 py-4 bg-green-500 text-white font-body font-bold rounded-2xl flex items-center justify-center gap-2 hover:bg-green-600 transition-colors shadow-lg shadow-green-500/20 active:scale-95"
