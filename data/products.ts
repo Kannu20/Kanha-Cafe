@@ -290,7 +290,7 @@ export const testimonials = [
     location: 'Jaipur',
     text: 'Kanha Bakers made my wedding cake and it was absolutely breathtaking. The Belgian Chocolate Truffle had our guests asking for seconds. Pure artistry!',
     rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b977?w=100&q=80',
+    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80',
   },
   {
     id: 2,
