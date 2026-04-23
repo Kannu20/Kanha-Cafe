@@ -375,7 +375,7 @@ export default function MenuPage() {
   const [search,         setSearch]         = useState('');
   const [loading,        setLoading]        = useState(true);
   const [showFilters,    setShowFilters]    = useState(false);
-  const pillsRef = useRef(null);
+  const pillsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const t = setTimeout(() => setLoading(false), 700);

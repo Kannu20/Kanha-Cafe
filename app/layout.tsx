@@ -1,8 +1,28 @@
 import type { Metadata } from 'next';
+import { Playfair_Display, Dancing_Script, Lato } from 'next/font/google';
 import './globals.css';
 import { CartProvider } from '@/context/CartContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
+  display: 'swap',
+});
+
+const dancing = Dancing_Script({
+  subsets: ['latin'],
+  variable: '--font-dancing',
+  display: 'swap',
+});
+
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['300', '400', '700'],
+  variable: '--font-lato',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Kanha Bakers — Crafted with Love, Baked with Pride',
@@ -12,15 +32,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Dancing+Script:wght@500;600;700&family=Lato:wght@300;400;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="overflow-x-hidden w-full">
+      <body className={`${playfair.variable} ${dancing.variable} ${lato.variable} overflow-x-hidden w-full`}>
         <CartProvider>
           <Navbar />
           <main className="page-transition min-h-screen">

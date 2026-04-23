@@ -1,6 +1,7 @@
 'use client';
 
-import { useEffect, useState, Suspense, lazy } from 'react';
+import { useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
@@ -9,7 +10,7 @@ import { products, testimonials } from '@/data/products';
 import ProductCard from '@/components/ProductCard';
 import { ProductSkeleton } from '@/components/Skeleton';
 
-const BakeryScene = lazy(() => import('@/components/BakeryScene'));
+const BakeryScene = dynamic(() => import('@/components/BakeryScene'), { ssr: false });
 
 const stats = [
   { icon: Award, value: '16+', label: 'Years of Craft' },
@@ -35,9 +36,7 @@ export default function HomePage() {
 
         {/* Three.js canvas */}
         {mounted && (
-          <Suspense fallback={null}>
-            <BakeryScene />
-          </Suspense>
+          <BakeryScene />
         )}
 
         {/* Hero content */}
@@ -157,6 +156,7 @@ export default function HomePage() {
                 src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80"
                 alt="Kanha Bakers kitchen"
                 fill
+                priority
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
