@@ -18,7 +18,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['images.unsplash.com', 'source.unsplash.com', 'api.qrserver.com', 'static.vecteezy.com'],
+    domains: ['images.unsplash.com', 'source.unsplash.com', 'api.qrserver.com', 'static.vecteezy.com', 'www.solara.in'],
     formats: ['image/avif', 'image/webp'],
     minimumCacheTTL: 3600,
   },

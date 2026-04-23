@@ -145,7 +145,7 @@ export const products: Product[] = [
   { id: 'mk15', category: 'Mocktails', name: 'Coconut Mocktail', price: 130, badge: null, rating: 4.4, reviews: 55, description: 'Coconut water blended with tropical fruit juices.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPV-aOQFtCL7R61Jn9jZmB8E1yzkjmZ6hBhA&s' },
 
   // ── SHAKES ───────────────────────────────────────────────────
-  { id: 'sk1', category: 'Shakes', name: 'Vanilla Shake', price: 120, badge: null, rating: 4.3, reviews: 88, description: 'Classic creamy vanilla milkshake.', image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?w=400&h=300&fit=crop' },
+  { id: 'sk1', category: 'Shakes', name: 'Vanilla Shake', price: 120, badge: null, rating: 4.3, reviews: 88, description: 'Classic creamy vanilla milkshake.', image: 'https://www.solara.in/cdn/shop/articles/vanilla_milkshake.jpg?v=1713767370&width=2048' },
   { id: 'sk2', category: 'Shakes', name: 'Strawberry Shake', price: 120, badge: null, rating: 4.4, reviews: 96, description: 'Fresh strawberry blended into a thick milkshake.', image: 'https://images.unsplash.com/photo-1553177595-4de2c3ef7f83?w=400&h=300&fit=crop' },
   { id: 'sk3', category: 'Shakes', name: 'Pineapple Shake', price: 120, badge: null, rating: 4.2, reviews: 45, description: 'Tropical pineapple milkshake with a citrus edge.', image: 'https://images.unsplash.com/photo-1577805947697-89e18249d767?w=400&h=300&fit=crop' },
   { id: 'sk4', category: 'Shakes', name: 'Chocolate Shake', price: 130, badge: 'Favourite', rating: 4.7, reviews: 198, description: 'Rich dark chocolate milkshake — decadently thick.', image: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=300&fit=crop' },
