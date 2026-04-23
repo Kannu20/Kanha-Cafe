@@ -8,7 +8,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    lines: ['12, Naya Bazaar', 'newai, Rajasthan 305001'],
+    lines: ['Bhagat Singh Colony', 'Niwai, Rajasthan 304021'],
   },
   {
     icon: Phone,
@@ -232,7 +232,7 @@ export default function ContactPage() {
           >
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-lg overflow-hidden flex-1 h-[250px] sm:h-[400px] lg:h-auto min-h-[250px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.5060734869737!2d74.6239733!3d26.4498954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e569bedf4dcd%3A0xadca97a7e83e7d1!2sNaya+Bazar%2C+newai%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3574.9736304989424!2d75.92669647542051!3d26.359714876981183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396e70c3e12c27b7%3A0xcd62dd07d2a9df65!2sKANHA%20BAKERY!5e0!3m2!1sen!2sin!4v1776954919461!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

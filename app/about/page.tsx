@@ -29,7 +29,7 @@ const values = [
 
 const team = [
   {
-    name: 'Mohan chandlani',
+    name: 'Promil chandlani',
     role: 'Founder & Head Baker',
     image: 'https://images.unsplash.com/photo-1607631568010-a87245c0daf8?w=300&q=80',
     bio: 'Trained in Vienna and Paris before bringing his craft back to newai in 2019.',
@@ -49,12 +49,11 @@ const team = [
 ];
 
 const milestones = [
-  { year: '2019', event: 'Opened our first 400 sq ft shop in Naya Bazaar, newai with one oven.' },
+  { year: '2019', event: 'Opened our first 400 sq ft shop in Bhagat Singh Colony, newai with one oven.' },
   { year: '2020', event: 'Expanded to a full production kitchen. Launched our signature croissant line.' },
-  { year: '2021', event: 'Won Rajasthan Best Bakery Award for the first time.' },
-  { year: '2023', event: 'Crossed 10,000 monthly orders. Hired our 25th team member.' },
+  { year: '2023', event: 'Crossed 5,000 monthly orders. Hired our 25th team member.' },
   { year: '2024', event: 'Launched online ordering and home delivery across newai.' },
-  { year: '2026', event: 'Celebrated 10 years and 500,000 happy customers.' },
+  { year: '2026', event: 'Celebrated 7 years and 20,000+ happy customers.' },
 ];
 
 export default function AboutPage() {
@@ -104,7 +103,7 @@ export default function AboutPage() {
             <p className="section-subtitle mb-2">Since 2019</p>
             <h2 className="section-title mb-6">From One Oven<br />to 20,000 Smiles</h2>
             <p className="font-body text-gray-600 leading-relaxed mb-5">
-              It all began on a quiet morning in 2019, when Mohan chandlani lit the oven in a tiny 400 sq ft shop in Naya Bazaar, newai. He had spent years studying the craft of bread and pastry in Vienna and Paris, and returned home with one dream: to give the people of Rajasthan the pleasure of truly artisan baked goods.
+              It all began on a quiet morning in 2019, when Mohan chandlani lit the oven in a tiny 400 sq ft shop in Bhagat Singh Colony, newai. He had spent years studying the craft of bread and pastry in Vienna and Paris, and returned home with one dream: to give the people of Rajasthan the pleasure of truly artisan baked goods.
             </p>
             <p className="font-body text-gray-600 leading-relaxed mb-5">
               His wife Sunita, a gifted pastry artist in her own right, joined him from day one. Together they perfected recipes that married European technique with Indian flavour — masala croissants, saffron éclairs, cardamom Danishes. The neighbourhood fell in love.
@@ -269,7 +268,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-white/10 border border-white/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-center sm:text-left"
             >
-              <p className="font-accent text-2xl text-caramel mb-2 sm:mb-3">{item.label}</p>
+              <p className="font-accent text-2xl text-white text-caramel mb-2 sm:mb-3">{item.label}</p>
               <p className="font-body text-bakery-100 leading-relaxed">{item.text}</p>
             </motion.div>
           ))}
