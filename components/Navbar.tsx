@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/menu', label: 'Menu' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
+  { href: '/offers', label: 'Offers' },
   { href: '/booking', label: 'Table Booking' },
 ];
 
@@ -145,7 +146,7 @@ export default function Navbar() {
 
             <div className="mt-auto pb-16">
               <p className="font-accent text-3xl text-caramel">Crafted with love.</p>
-              <p className="font-body text-sm text-crust mt-1">Since 2016 · newai, Rajasthan</p>
+              <p className="font-body text-sm text-crust mt-1">Since 2019 · newai, Rajasthan</p>
             </div>
           </motion.div>
         )}

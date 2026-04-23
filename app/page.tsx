@@ -180,7 +180,7 @@ export default function HomePage() {
               Baked Fresh.<br />Served with Pride.
             </h2>
             <p className="font-body text-sm sm:text-base text-bakery-200 leading-relaxed mb-4">
-              Founded in 2016 by the chandlani family, Kanha Bakers began as a small neighborhood bakery with a single oven and an enormous dream — to bring European artisan baking techniques to the people of newai.
+              Founded in 2019 by the chandlani family, Kanha Bakers began as a small neighborhood bakery with a single oven and an enormous dream — to bring European artisan baking techniques to the people of newai.
             </p>
             <p className="font-body text-sm sm:text-base text-bakery-200 leading-relaxed mb-6 sm:mb-8">
               Today we are Rajasthan's most beloved artisan bakery, yet every product is still made by hand, every morning, before the sun rises.
