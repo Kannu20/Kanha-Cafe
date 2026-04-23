@@ -284,20 +284,31 @@ function ProductCard({ product, index = 0 }: ProductCardProps) {
         {/* Add to Cart */}
         <motion.button
           onClick={handleAdd}
-          whileTap={{ scale: 0.96 }}
-          className="w-full flex items-center justify-center gap-1.5 py-2.5 rounded-xl font-nunito font-700 text-xs transition-all duration-300 relative overflow-hidden"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.95 }}
+          className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl font-nunito font-bold text-[0.78rem] tracking-wide transition-all duration-300 relative overflow-hidden group/btn"
           style={added ? {
-            background: '#f0fdf4',
-            color: '#16a34a',
-            border: '1px solid #bbf7d0',
-          } : {
-            background: 'linear-gradient(135deg, #C67C4E, #D4A853)',
+            background: 'linear-gradient(135deg, #14532d, #16a34a)',
             color: 'white',
-            boxShadow: '0 3px 12px rgba(198,124,78,0.30)',
+            boxShadow: '0 4px 14px rgba(22,163,74,0.40)',
+          } : {
+            background: 'linear-gradient(135deg, #7B3F00 0%, #C67C4E 45%, #E8A87C 100%)',
+            color: 'white',
+            boxShadow: '0 4px 18px rgba(123,63,0,0.45), 0 1px 3px rgba(0,0,0,0.15)',
           }}
         >
-          <FiShoppingCart size={12} />
-          {added ? '✓ Added!' : 'Add to Cart'}
+          {/* Shine sweep on hover */}
+          {!added && (
+            <span
+              className="absolute inset-0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500 pointer-events-none"
+              style={{
+                background: 'linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.22) 50%, transparent 60%)',
+                backgroundSize: '200% 100%',
+              }}
+            />
+          )}
+          <FiShoppingCart size={13} />
+          {added ? '✓ Added to Cart!' : 'Add to Cart'}
         </motion.button>
       </div>
     </motion.article>
@@ -364,7 +375,7 @@ export default function MenuPage() {
   const [search,         setSearch]         = useState('');
   const [loading,        setLoading]        = useState(true);
   const [showFilters,    setShowFilters]    = useState(false);
-  const pillsRef = useRef(null);
+  const pillsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const t = setTimeout(() => setLoading(false), 700);
@@ -431,22 +442,21 @@ export default function MenuPage() {
 
   
   const handleCategory = (cat: Category) => {
-  setActiveCategory(cat);
-  setSearch('');
-  setShowFilters(false);
+    setActiveCategory(cat);
+    setSearch('');
+    setShowFilters(false);
 
-  const pillsRef = useRef<HTMLDivElement | null>(null);
-  if (pillsRef.current) {
-    const btn = pillsRef.current.querySelector<HTMLButtonElement>(
-      `[data-cat="${cat}"]`
-    );
-    btn?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest',
-      inline: 'center',
-    });
-  }
-};
+    if (pillsRef.current) {
+      const btn = pillsRef.current.querySelector<HTMLButtonElement>(
+        `[data-cat="${cat}"]`
+      );
+      btn?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center',
+      });
+    }
+  };
 
   return (
     <div className="min-h-screen" style={{ background: '#FDF6EC' }}>
@@ -466,11 +476,11 @@ export default function MenuPage() {
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 rounded-full px-5 py-2 mb-4 border border-white/20 text-amber-200 text-sm font-nunito font-semibold"
+            className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 sm:px-5 sm:py-2 mb-4 border border-white/20 text-amber-200 text-xs sm:text-sm font-nunito font-semibold max-w-full text-center"
             style={{ background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(12px)' }}
           >
-            <HiOutlineSparkles className="text-gold" />
-            Open 11 AM – 11:30 PM · +91 8118866587
+            <HiOutlineSparkles className="text-gold flex-shrink-0" />
+            <span>Open 11 AM – 11:30 PM · +91 8118866587</span>
           </motion.div>
 
           <motion.h1
@@ -497,7 +507,7 @@ export default function MenuPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.18 }}
-            className="font-nunito text-white/65 max-w-lg mx-auto text-base"
+            className="font-nunito text-white/65 max-w-lg mx-auto text-sm sm:text-base px-4 sm:px-0"
           >
             {products.length} dishes across {categories.length - 1} categories — crafted fresh daily in our kitchen.
           </motion.p>
@@ -550,21 +560,19 @@ export default function MenuPage() {
       {/* ── Category Filters ── */}
       <div className="sticky top-[64px] z-30 bg-cream/90 backdrop-blur-md border-b border-caramel/12 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-2.5">
-          {/* Mobile: toggle */}
+          {/* Mobile: active category label */}
           <div className="md:hidden flex items-center justify-between mb-2">
-            <span className="font-nunito text-xs text-mocha/60 font-semibold uppercase tracking-wider">
-              {activeCategory} {search && `· "${search}"`}
+            <span className="font-nunito text-xs text-mocha/60 font-semibold uppercase tracking-wider truncate">
+              {search ? `"${search}"` : activeCategory}
             </span>
-            {/* <button
-              onClick={() => setShowFilters(!showFilters)}
-              className="flex items-center gap-1.5 text-caramel font-nunito font-semibold text-xs px-3 py-1.5 rounded-full border border-caramel/30"
-            >
-              <FiFilter size={12} />
-              Filters
-              <motion.span animate={{ rotate: showFilters ? 180 : 0 }} transition={{ duration: 0.2 }}>
-                <FiChevronDown size={12} />
-              </motion.span>
-            </button> */}
+            {(search || activeCategory !== 'All') && (
+              <button
+                onClick={() => { setSearch(''); setActiveCategory('All'); }}
+                className="text-xs font-nunito font-semibold text-caramel hover:underline ml-2 flex-shrink-0"
+              >
+                Clear
+              </button>
+            )}
           </div>
 
           {/* Scrollable pills */}
@@ -648,7 +656,7 @@ export default function MenuPage() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4"
             >
               {filtered.map((p, i) => (
                 <ProductCard key={p.id} product={p} index={i} />
@@ -711,14 +719,15 @@ function CategorySection({ cat, items, onFilterClick }: CategorySectionProps) {
         </div>
         <button
           onClick={() => onFilterClick(cat)}
-          className="font-nunito text-xs font-semibold text-caramel hover:underline flex items-center gap-1"
+          className="flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-nunito font-semibold text-xs sm:text-sm text-caramel border border-caramel/40 hover:bg-caramel hover:text-white transition-all duration-250 whitespace-nowrap flex-shrink-0"
         >
-          See all →
+          See all
+          <span className="text-base leading-none">→</span>
         </button>
       </div>
 
-      {/* Horizontal scroll on mobile, grid on desktop */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+      {/* Responsive grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">
         {items.slice(0, 5).map((p, i) => (
           <ProductCard key={p.id} product={p} index={i} />
         ))}
