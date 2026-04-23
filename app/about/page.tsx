@@ -50,7 +50,7 @@ const team = [
 
 const milestones = [
   { year: '2019', event: 'Opened our first 400 sq ft shop in Naya Bazaar, newai with one oven.' },
-  { year: '2018', event: 'Expanded to a full production kitchen. Launched our signature croissant line.' },
+  { year: '2020', event: 'Expanded to a full production kitchen. Launched our signature croissant line.' },
   { year: '2021', event: 'Won Rajasthan Best Bakery Award for the first time.' },
   { year: '2023', event: 'Crossed 10,000 monthly orders. Hired our 25th team member.' },
   { year: '2024', event: 'Launched online ordering and home delivery across newai.' },
