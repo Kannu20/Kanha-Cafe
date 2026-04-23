@@ -1340,7 +1340,7 @@ export default function CheckoutPage() {
     transactionId: '', error: '', verified: false,
   });
 
-  const upiId      = '8118866587@ybl';
+  const upiId      = '9887411335-2@ybl';
   const localTotal = localItems.reduce((s, i) => s + i.price * i.quantity, 0);
   const deliveryFee = details.orderType === 'pickup' ? 0 : localTotal >= 500 ? 0 : 49;
   const grandTotal  = localTotal + deliveryFee;
