@@ -231,8 +231,13 @@ export const products: Product[] = [
   { id: 'si10', category: 'South Indian', name: 'Jini Dosa', price: 300, badge: null, rating: 4.5, reviews: 98, description: 'Semolina dosa with a spiced potato filling.', image: 'https://cookilicious.com/wp-content/uploads/2022/04/Onion-Ravva-Dosa-35.jpg' },
  
   { id: 'si11', category: 'South Indian', name: 'Veg Uttapam', price: 150, badge: null, rating: 4.4, reviews: 75, description: 'Thick rice pancake topped with fresh vegetables.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrIjq83ao47fxMCtBsLY0lq5LVPiqke2y9Sw&s' },
+<<<<<<< HEAD
   { id: 'si12', category: 'South Indian', name: 'Tomato Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
    { id: 'si13', category: 'South Indian', name: 'Onion Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with onion and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
+=======
+  { id: 'si12', category: 'South Indian', name: 'Tomato Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato, onion and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
+   { id: 'si13', category: 'South Indian', name: 'Onion Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato, onion and green chilli.', image: '\images\onion uttapam 2.jpg' },
+>>>>>>> ed5a80b (image added)
  
   { id: 'si14', category: 'South Indian', name: 'Mix Uttapam', price: 200, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato, onion and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
 
