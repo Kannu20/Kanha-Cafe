@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ChefHat, Instagram, Facebook, Twitter, MapPin, Phone, Mail } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const links = {
   Explore: [
@@ -19,6 +20,16 @@ const links = {
   ],
 };
 
+const socialLinks = [
+  {
+    icon: Instagram,
+    link: "https://www.instagram.com/kanha_bakers_/",
+  },
+  {
+    icon: FaWhatsapp,
+    link: "https://whatsapp.com/channel/0029Vb8DJphLo4hWgMD9pG3N", // country code + number
+  },
+];
 export default function Footer() {
   return (
     <footer className="bg-mocha text-cream relative overflow-hidden">
@@ -42,16 +53,21 @@ export default function Footer() {
               Baking happiness since 2019. Every creation is an expression of love, crafted with the finest ingredients from the heart of Rajasthan.
             </p>
             <div className="flex gap-3">
-              {[Instagram, Facebook, Twitter].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-bakery-200 hover:bg-bakery-600 hover:text-white transition-all duration-300"
-                >
-                  <Icon size={16} />
-                </a>
-              ))}
-            </div>
+  {socialLinks.map((item, i) => {
+    const Icon = item.icon;
+    return (
+      <a
+        key={i}
+        href={item.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-bakery-200 hover:bg-bakery-600 hover:text-white transition-all duration-300"
+      >
+        <Icon size={16} />
+      </a>
+    );
+  })}
+</div>
           </div>
 
           {/* Links */}

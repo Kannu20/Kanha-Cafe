@@ -15,7 +15,7 @@ const BakeryScene = dynamic(() => import('@/components/BakeryScene'), { ssr: fal
 const stats = [
   { icon: Award, value: '7+', label: 'Years of Craft' },
   { icon: Star,  value: '4.9★', label: 'Customer Rating' },
-  { icon: Clock, value: '50K+', label: 'Orders Delivered' },
+  { icon: Clock, value: '20K+', label: 'Orders Delivered' },
   { icon: Heart, value: '100%', label: 'Made with Love' },
 ];
 

@@ -54,8 +54,8 @@ const videos = [
 
 const socials = [
     {
-        id: 'ig', name: 'Instagram', handle: '@kanh.abakers',
-        url: 'https://www.instagram.com/kanh.abakers/',
+        id: 'ig', name: 'Instagram', handle: '@kanha_bakers_',
+        url: 'https://www.instagram.com/kanha_bakers_/',
         icon: <FiInstagram size={20} />, iconBg: 'linear-gradient(135deg,#E1306C,#C13584)',
         cardBg: 'rgba(225,48,108,0.09)', cardBorder: 'rgba(225,48,108,0.28)'
     },
