@@ -48,10 +48,8 @@ const photos = [
 ];
 
 const videos = [
-    { thumb: 'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=600&h=340&fit=crop', label: 'Our Kitchen — Morning Rush' },
-    { thumb: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&h=340&fit=crop', label: 'How We Make Cheesecake' },
-    { thumb: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=340&fit=crop', label: 'Cheese Burst Pizza Drop 🍕' },
-    { thumb: 'https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=600&h=340&fit=crop', label: 'Shake Compilation — All Flavours' },
+    { src: '/videos/video1.mp4', label: 'Our Kitchen — Morning Rush' },
+    { src: '/videos/video2.mp4', label: 'Our Rooftop View' },
 ];
 
 const socials = [
@@ -61,18 +59,18 @@ const socials = [
         icon: <FiInstagram size={20} />, iconBg: 'linear-gradient(135deg,#E1306C,#C13584)',
         cardBg: 'rgba(225,48,108,0.09)', cardBorder: 'rgba(225,48,108,0.28)'
     },
-    {
-        id: 'yt', name: 'YouTube', handle: 'Kanha Bakers Reels',
-        url: 'https://youtube.com/@kanhabakers',
-        icon: <FiYoutube size={20} />, iconBg: '#FF0000',
-        cardBg: 'rgba(255,0,0,0.08)', cardBorder: 'rgba(255,0,0,0.25)'
-    },
-    {
-        id: 'fb', name: 'Facebook', handle: 'Kanha Bakers Official',
-        url: 'https://facebook.com/kanhabakers',
-        icon: <FiFacebook size={20} />, iconBg: '#1877F2',
-        cardBg: 'rgba(24,119,242,0.08)', cardBorder: 'rgba(24,119,242,0.25)'
-    },
+    // {
+    //     id: 'yt', name: 'YouTube', handle: 'Kanha Bakers Reels',
+    //     url: 'https://youtube.com/@kanhabakers',
+    //     icon: <FiYoutube size={20} />, iconBg: '#FF0000',
+    //     cardBg: 'rgba(255,0,0,0.08)', cardBorder: 'rgba(255,0,0,0.25)'
+    // },
+    // {
+    //     id: 'fb', name: 'Facebook', handle: 'Kanha Bakers Official',
+    //     url: 'https://facebook.com/kanhabakers',
+    //     icon: <FiFacebook size={20} />, iconBg: '#1877F2',
+    //     cardBg: 'rgba(24,119,242,0.08)', cardBorder: 'rgba(24,119,242,0.25)'
+    // },
     {
         id: 'wa', name: 'WhatsApp', handle: 'Join WhatsApp Channel',
         url: 'https://whatsapp.com/channel/0029Vb8DJphLo4hWgMD9pG3N',
@@ -148,7 +146,7 @@ export default function OffersPage() {
     const [email, setEmail] = useState('');
 
     const [emailErr, setEmailErr] = useState(false);
-
+    const [playingIndex, setPlayingIndex] = useState<number | null>(null);
 
     return (
         /*
@@ -420,25 +418,63 @@ export default function OffersPage() {
                                         border: '1px solid rgba(255,255,255,.08)'
                                     }}
                                 >
-                                    <img src={v.thumb} alt={v.label} loading="lazy"
-                                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', transition: 'transform .5s' }}
-                                        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.06)'}
-                                        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+                                    {/* <video
+                                        src={v.src}
+                                        controls
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'cover'
+                                        }}
+                                    /> */}
+                                    <video
+                                        src={v.src}
+                                        style={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'cover',
+                                            borderRadius: '18px',
+                                            cursor: 'pointer'
+                                        }}
+                                        onPlay={() => setPlayingIndex(i)}
+                                        onPause={() => setPlayingIndex(null)}
+                                        onClick={(e) => {
+                                            const vid = e.currentTarget;
+                                            if (vid.paused) vid.play();
+                                            else vid.pause();
+                                        }}
                                     />
                                     {/* Play btn */}
-                                    <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    {playingIndex !== i && (
                                         <div style={{
-                                            width: 48, height: 48, borderRadius: '50%',
-                                            background: 'rgba(255,255,255,.90)',
-                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                            boxShadow: '0 4px 20px rgba(0,0,0,.38)',
+                                            position: 'absolute',
+                                            inset: 0,
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            pointerEvents: 'none'
                                         }}>
                                             <div style={{
-                                                width: 0, height: 0, borderStyle: 'solid', borderWidth: '9px 0 9px 18px',
-                                                borderColor: 'transparent transparent transparent #C67C4E', marginLeft: 3
-                                            }} />
+                                                width: 48,
+                                                height: 48,
+                                                borderRadius: '50%',
+                                                background: 'rgba(255,255,255,.90)',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                boxShadow: '0 4px 20px rgba(0,0,0,.38)',
+                                            }}>
+                                                <div style={{
+                                                    width: 0,
+                                                    height: 0,
+                                                    borderStyle: 'solid',
+                                                    borderWidth: '9px 0 9px 18px',
+                                                    borderColor: 'transparent transparent transparent #C67C4E',
+                                                    marginLeft: 3
+                                                }} />
+                                            </div>
                                         </div>
-                                    </div>
+                                    )}
                                     {/* Label */}
                                     <div style={{
                                         position: 'absolute', bottom: 0, left: 0, right: 0, padding: '10px 14px',
@@ -493,7 +529,7 @@ export default function OffersPage() {
                 </div>
 
                 {/* ── Footer ── */}
-                
+
 
             </div>
         </div>
