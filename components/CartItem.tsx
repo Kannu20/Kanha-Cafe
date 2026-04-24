@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+
 import { motion } from 'framer-motion';
 import { Minus, Plus, Trash2 } from 'lucide-react';
 import { CartItem as CartItemType } from '@/context/CartContext';
@@ -24,7 +24,7 @@ export default function CartItem({ item }: Props) {
     >
       {/* Image */}
       <div className="relative w-20 h-24 sm:w-24 sm:h-24 rounded-xl overflow-hidden shrink-0 bg-bakery-50">
-        <Image src={item.image} alt={item.name} fill className="object-cover" sizes="(max-width: 640px) 80px, 96px" />
+        <img src={item.image} alt={item.name} className="object-cover w-full h-full" loading="lazy" />
       </div>
 
       {/* Content Side */}
