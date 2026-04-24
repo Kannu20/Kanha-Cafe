@@ -446,16 +446,35 @@ export default function MenuPage() {
     setSearch('');
     setShowFilters(false);
 
-    if (pillsRef.current) {
-      const btn = pillsRef.current.querySelector<HTMLButtonElement>(
-        `[data-cat="${cat}"]`
-      );
-      btn?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'center',
-      });
-    }
+    // 1. Scroll the sticky category pills horizontally to keep the active one in view.
+    // We use offsetLeft and container.scrollTo to avoid the notorious bug where 
+    // element.scrollIntoView() causes unwanted vertical scrolling on the entire page.
+    setTimeout(() => {
+      if (pillsRef.current) {
+        const btn = pillsRef.current.querySelector<HTMLDivElement>(
+          `[data-cat="${cat}"]`
+        );
+        if (btn) {
+          const container = pillsRef.current;
+          const scrollLeft = btn.offsetLeft - container.offsetWidth / 2 + btn.offsetWidth / 2;
+          container.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+        }
+      }
+    }, 10);
+
+    // 2. Scroll the entire page up to the top of the items list.
+    // Using setTimeout allows React to re-render the smaller grid first, 
+    // preventing the browser from getting stuck at the bottom of the page.
+    setTimeout(() => {
+      const topEl = document.getElementById('items-top-anchor');
+      if (topEl) {
+        // Since topEl is static (not sticky), getBoundingClientRect() + scrollY is 100% reliable.
+        const topPosition = topEl.getBoundingClientRect().top + window.scrollY - 130; 
+        window.scrollTo({ top: topPosition, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   return (
@@ -558,7 +577,7 @@ export default function MenuPage() {
       </div>
 
       {/* ── Category Filters ── */}
-      <div className="sticky top-[64px] z-30 bg-cream/90 backdrop-blur-md border-b border-caramel/12 shadow-sm">
+      <div id="category-filters" className="sticky top-[64px] z-30 bg-cream/90 backdrop-blur-md border-b border-caramel/12 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-2.5">
           {/* Mobile: active category label */}
           <div className="md:hidden flex items-center justify-between mb-2">
@@ -599,10 +618,10 @@ export default function MenuPage() {
       </div>
 
       {/* ── Results ── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div id="items-top-anchor" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
         {/* Count bar */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-6">
           <p className="font-nunito text-sm text-mocha/60">
             {search
               ? <>Showing <strong className="text-espresso">{filtered.length}</strong> results for <strong className="text-caramel">"{search}"</strong></>
@@ -614,9 +633,9 @@ export default function MenuPage() {
           {(search || activeCategory !== 'All') && (
             <button
               onClick={() => { setSearch(''); setActiveCategory('All'); }}
-              className="text-xs font-nunito font-semibold text-caramel hover:underline flex items-center gap-1"
+              className="text-xs font-nunito font-semibold text-caramel hover:underline flex items-center gap-1.5 bg-caramel/10 px-3 py-1.5 rounded-full whitespace-nowrap"
             >
-              <FiX size={12} /> Clear
+              <FiX size={12} /> Clear Filter
             </button>
           )}
         </div>
@@ -704,25 +723,25 @@ function CategorySection({ cat, items, onFilterClick }: CategorySectionProps) {
       transition={{ duration: 0.5 }}
     >
       {/* Section heading */}
-      <div className="flex items-center justify-between mb-5">
-        <div className="flex items-center gap-3">
+      <div className="flex flex-row items-center justify-between gap-2 mb-5">
+        <div className="flex items-center gap-2 sm:gap-3 min-w-0">
           <div
-            className="w-10 h-10 rounded-xl flex items-center justify-center text-xl flex-shrink-0 shadow-warm-sm"
+            className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center text-lg sm:text-xl flex-shrink-0 shadow-warm-sm"
             style={{ background: 'linear-gradient(135deg, #FDF6EC, #F5ECD7)', border: '1px solid rgba(198,124,78,0.2)' }}
           >
             {catEmojis[cat] || '🍽'}
           </div>
-          <div>
-            <h2 className="font-playfair font-bold text-espresso text-xl leading-none">{cat}</h2>
-            <p className="font-nunito text-mocha/50 text-xs mt-0.5">{items.length} items</p>
+          <div className="min-w-0">
+            <h2 className="font-playfair font-bold text-espresso text-lg sm:text-xl leading-tight truncate">{cat}</h2>
+            <p className="font-nunito text-mocha/50 text-[11px] sm:text-xs mt-0.5">{items.length} items</p>
           </div>
         </div>
         <button
           onClick={() => onFilterClick(cat)}
-          className="flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-nunito font-semibold text-xs sm:text-sm text-caramel border border-caramel/40 hover:bg-caramel hover:text-white transition-all duration-250 whitespace-nowrap flex-shrink-0"
+          className="flex items-center gap-1 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full font-nunito font-semibold text-[11px] sm:text-sm text-caramel border border-caramel/40 hover:bg-caramel hover:text-white transition-all duration-250 whitespace-nowrap flex-shrink-0"
         >
           See all
-          <span className="text-base leading-none">→</span>
+          <span className="text-sm sm:text-base leading-none">→</span>
         </button>
       </div>
 
