@@ -216,7 +216,7 @@ export const products: Product[] = [
   { id: 'si1', category: 'South Indian', name: 'Plain Dosa', price: 100, badge: null, rating: 4.5, reviews: 198, description: 'Crispy golden dosa served with sambar and chutney.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIy3ULx59B_xAIlsMbr6FfXOxRzi_vbIhTLA&s' },
   { id: 'si2', category: 'South Indian', name: 'Butter Masala Dosa', price: 120, badge: 'Bestseller', rating: 4.8, reviews: 290, description: 'Crispy dosa stuffed with spiced potato masala and butter.', image: 'https://images.raasakarts.com/insecure/fit/1000/1000/ce/0/plain/https://rasakart-assets.s3.ap-south-1.amazonaws.com/3fa229/prods/El3qOEJ7k2xFevxM3DrShujTVwoOrr04Szwv70vk.jpg@webp' },
   { id: 'si3', category: 'South Indian', name: 'Rawa Plain Dosa', price: 130, badge: null, rating: 4.4, reviews: 112, description: 'Thin crispy semolina dosa — light and lacy.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbNs_k00kLfeTMdEf2QXEcLI61RKma4zrghg&s' },
-  { id: 'si4', category: 'South Indian', name: 'onion Masala Dosa', price: 150, badge: null, rating: 4.5, reviews: 198, description: 'Crispy golden dosa served with sambar and chutney.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIy3ULx59B_xAIlsMbr6FfXOxRzi_vbIhTLA&s' },
+  { id: 'si4', category: 'South Indian', name: 'Onion Masala Dosa', price: 150, badge: null, rating: 4.5, reviews: 198, description: 'Crispy dosa stuffed with spiced onion masala.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIy3ULx59B_xAIlsMbr6FfXOxRzi_vbIhTLA&s' },
   
   { id: 'si5', category: 'South Indian', name: 'Rawa Masala Dosa', price: 170, badge: null, rating: 4.5, reviews: 98, description: 'Semolina dosa with a spiced potato filling.', image: 'https://cookilicious.com/wp-content/uploads/2022/04/Onion-Ravva-Dosa-35.jpg' },
  
@@ -231,8 +231,8 @@ export const products: Product[] = [
   { id: 'si10', category: 'South Indian', name: 'Jini Dosa', price: 300, badge: null, rating: 4.5, reviews: 98, description: 'Semolina dosa with a spiced potato filling.', image: 'https://cookilicious.com/wp-content/uploads/2022/04/Onion-Ravva-Dosa-35.jpg' },
  
   { id: 'si11', category: 'South Indian', name: 'Veg Uttapam', price: 150, badge: null, rating: 4.4, reviews: 75, description: 'Thick rice pancake topped with fresh vegetables.', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrIjq83ao47fxMCtBsLY0lq5LVPiqke2y9Sw&s' },
-  { id: 'si12', category: 'South Indian', name: 'Tomato Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato, onion and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
-   { id: 'si13', category: 'South Indian', name: 'Onion Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato, onion and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
+  { id: 'si12', category: 'South Indian', name: 'Tomato Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
+   { id: 'si13', category: 'South Indian', name: 'Onion Uttapam', price: 150, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with onion and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
  
   { id: 'si14', category: 'South Indian', name: 'Mix Uttapam', price: 200, badge: null, rating: 4.4, reviews: 68, description: 'Uttapam topped with tomato, onion and green chilli.', image: 'https://www.awesomecuisine.com/wp-content/uploads/2015/04/Tomato-Uttapam-500x500.jpg' },
 
