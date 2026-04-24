@@ -13,7 +13,7 @@ import { ProductSkeleton } from '@/components/Skeleton';
 const BakeryScene = dynamic(() => import('@/components/BakeryScene'), { ssr: false });
 
 const stats = [
-  { icon: Award, value: '16+', label: 'Years of Craft' },
+  { icon: Award, value: '7+', label: 'Years of Craft' },
   { icon: Star,  value: '4.9★', label: 'Customer Rating' },
   { icon: Clock, value: '50K+', label: 'Orders Delivered' },
   { icon: Heart, value: '100%', label: 'Made with Love' },
